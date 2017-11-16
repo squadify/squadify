@@ -74,3 +74,13 @@ FlowRouter.notFound = {
     BlazeLayout.render('Page_Not_Found');
   },
 };
+
+/*                        CLUB ROUTE                       */
+
+export const clubPageRoutName = 'Club_Page';
+FlowRouter.route('/club', {
+  name: clubPageRoutName,
+  action() {
+    BlazeLayout.render('Club_Layout', { main: clubPageRoutName });
+  },
+});
