@@ -2,61 +2,45 @@
 
   <div class="landing-section-1">
     <div class="ui grid">
-
       <div class="row">
-        <div class="ui right aligned sixteen wide column">
-          {{> Cas_Login }}
-        </div>
-
-      </div>
-      <div class="row">
-        <div class="ui center aligned sixteen wide column">
-          <h1 class="landing-section-1-welcome">Welcome to BowFolios</h1>
-          <h3 class="landing-section-1-tagline">Professional portfolios and networking for the University of Hawaii community</h3>
-        </div>
+        <a class="{{ isActiveRoute 'Landing_Page' }} ui centered image" href="{{ pathFor 'Landing_Page'}}"><img class="ui centered image" src="/images/header.png"></a>
       </div>
     </div>
   </div>
 
-  <div class="landing-section-2">
-    <div class="ui grid">
-      <div class="ui eight wide column">
-        <img class="ui centered medium image" src="/images/profile.png">
-      </div>
-      <div class="ui eight wide middle aligned column">
-        <h1 class="landing-section-header">Create your portfolio.</h1>
-        <h1 class="landing-section-header">Specify your interests.</h1>
-      </div>
-    </div>
-  </div>
-
-  <div class="landing-section-3">
-    <div class="ui grid">
-      <div class="ui eight wide middle aligned column">
-        <h1 class="landing-section-header">Publish your portfolio in the BowFolio directory.</h1>
-      </div>
-      <div class="ui eight wide column">
-        <img class="ui centered medium image" src="/images/directory.png">
+  <div style="margin: 0px; border-radius: 0px;" class="ui borderless inverted menu">
+    <div class="ui container">
+      <a class="item" href="{{pathFor 'Landing_Page'}}"><h1>HOME</h1></a>
+      <a class="{{ isActiveRoute 'Search_Page'}} item" href="{{ pathFor 'Search_Page' }}">SEARCH</a>
+      <a class="{{ isActiveRoute 'Add_Contact_Page'}} item" href="{{ pathFor 'Add_Contact_Page' }}">LISTS</a>
+      {{#if currentUser}}
+      <a class="{{ isActiveRoute 'Add_Stuff_Page'}} item" href="{{ pathFor 'Add_Stuff_Page' }}">PROFILE</a>
+      {{/if}}
+      <div class="right item">
+        {{> Cas_Login }}
       </div>
     </div>
   </div>
 
-  <div class="landing-section-2">
-    <div class="ui grid">
-      <div class="ui eight wide column">
-        <img class="ui centered medium image" src="/images/filter.png">
-      </div>
-      <div class="ui eight wide middle aligned column">
-        <h1 class="landing-section-header">Find UH community members with similar interests.</h1>
-      </div>
+  <div class="spotlight">
+    <div class="ui container">
+      <h1>Spotlight Organization</h1>
+      <a style="font-size: 20px; font-weight: bold;" href="#2ds5f4d">ACM Manoa</a>
+      <img style="padding-top: 25px;" class="ui large image" src="http://acmanoa.github.io/images/ACM_Manoa_Wordmark.png">
+      <h3>Summary:</h3>
+      <p style="padding-bottom: 50px;">
+        The student chapter of the Association for Computing Machinery at UH Manoa.-------------------------------------------------------------------------------------------------------------- ---------------------------------------------------------------------------------------------------------------- --------------------------------------------------------------------------------------------------------------- ------------------------------------------------------------------------------------------------------------------- -----------------------------------------------------.
+      </p>
     </div>
   </div>
-
-  <div class="landing-section-5">
-    <div class="ui grid">
-      <div class="ui center aligned sixteen wide column">
-        {{> Cas_Login size="large"}}
+  <div class="search_boxes">
+    <div class="ui container">
+      <h2>Club Search</h2>
+      <div style="padding-bottom: 25px;" class="ui centered item">
+        <input type="text" class="clubSearch" placeholder="Search for Clubs">
       </div>
+      <button class="ui button" type="submit">Search</button>
+      <button class="ui button" type="submit">Advanced Search</button>
     </div>
   </div>
 
