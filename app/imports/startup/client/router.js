@@ -6,11 +6,20 @@ import { $ } from 'meteor/jquery';
 /*                        LANDING ROUTE                       */
 
 export const landingPageRouteName = 'Landing_Page';
-FlowRouter.route('/', {
+FlowRouter.route('/landing', {
   name: landingPageRouteName,
   action() {
     BlazeLayout.render('Landing_Layout', { main: landingPageRouteName });
   },
+});
+
+/*                        LIST PAGE                            */
+export const listPage = 'List_Page';
+FlowRouter.route('/', {
+  name: listPage,
+  action() {
+    BlazeLayout.render('List_Page', {main: listPage})
+  }
 });
 
 /*                        DIRECTORY ROUTE                       */
