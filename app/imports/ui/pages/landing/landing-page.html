@@ -3,16 +3,26 @@
   <div class="landing-section-1">
     <div class="ui grid">
       <div class="row">
-        <a class="{{ isActiveRoute 'Landing_Page' }} ui centered image" href="{{ pathFor 'Landing_Page'}}"><img class="ui centered image" src="/images/header.png"></a>
+        <a class="{{ isActiveRoute 'Landing_Page' }} ui centered image" href="{{ pathFor 'Landing_Page'}}"
+           id="main_pic"><img class="ui centered image" src="/images/header_pic.png"></a>
       </div>
     </div>
   </div>
-
+  <div style="background: #1B1C1D; padding-top: 25px;">
+    <div class="ui container">
+      <div class="ui fluid category search">
+        <div class="ui fluid icon input">
+          <input class="prompt" type="text" placeholder="Search clubs...">
+          <i class="search icon"></i>
+        </div>
+      </div>
+    </div>
+  </div>
   <div style="margin: 0px; border-radius: 0px;" class="ui borderless inverted menu">
     <div class="ui container">
-      <a class="item" href="{{pathFor 'Landing_Page'}}"><h1>HOME</h1></a>
-      <a class="{{ isActiveRoute 'Search_Page'}} item" href="{{ pathFor 'Search_Page' }}">SEARCH</a>
-      <a class="{{ isActiveRoute 'Add_Contact_Page'}} item" href="{{ pathFor 'Add_Contact_Page' }}">LISTS</a>
+      <a class="item" href="/"><h1>HOME</h1></a>
+      <a class="item" href="/search">SEARCH</a>
+      <a class="item" href="/list">LISTS</a>
       {{#if currentUser}}
       <a class="{{ isActiveRoute 'Add_Stuff_Page'}} item" href="{{ pathFor 'Add_Stuff_Page' }}">PROFILE</a>
       {{/if}}
@@ -26,21 +36,43 @@
     <div class="ui container">
       <h1>Spotlight Organization</h1>
       <a style="font-size: 20px; font-weight: bold;" href="#2ds5f4d">ACM Manoa</a>
-      <img style="padding-top: 25px;" class="ui large image" src="http://acmanoa.github.io/images/ACM_Manoa_Wordmark.png">
+      <img style="padding-top: 25px;" class="ui large image"
+           src="http://acmanoa.github.io/images/ACM_Manoa_Wordmark.png">
       <h3>Summary:</h3>
       <p style="padding-bottom: 50px;">
-        The student chapter of the Association for Computing Machinery at UH Manoa.-------------------------------------------------------------------------------------------------------------- ---------------------------------------------------------------------------------------------------------------- --------------------------------------------------------------------------------------------------------------- ------------------------------------------------------------------------------------------------------------------- -----------------------------------------------------.
+        The Association for Computing Machinery at Manoa is UH Manoa’s student chapter of the Association for Computing
+        Machinery. We are a Registered Independent Organization (RIO) focused on providing opportunities and resources
+        for our members’ personal and professional advancement. ACManoa has 3 pillars - social, professional, and
+        technical. We hold social activities for our members to have fun as well as develop and strengthen their
+        interpersonal relationships. We strive to connect our members to professionals in the industry, abroad and
+        within the Honolulu community. We are largely comprised of aspiring professionals in the computing industry;
+        accordingly, members in ACManoa are encouraged to join and create Special Interest Groups (SIG) and Playgrounds
+        where they can collaborate on interesting projects.
       </p>
     </div>
-  </div>
-  <div class="search_boxes">
     <div class="ui container">
-      <h2>Club Search</h2>
-      <div style="padding-bottom: 25px;" class="ui centered item">
-        <input type="text" class="clubSearch" placeholder="Search for Clubs">
+      <h1 style="padding-bottom: 25px;">Interests</h1>
+    </div>
+    <div class="ui container">
+      <span>
+        <img class="ui medium image" src="/images/academics.png">
+      </span>
+      <span>
+        <img class="ui medium image" src="/images/music.png">
+      </span>
+      <span>
+        <img class="ui medium image" src="/images/sports.png">
+      </span>
+    </div>
+  </div>
+  <div style="padding-bottom: 50px; padding-top: 50px; background: #1B1C1D;">
+    <div class="ui container">
+      <div class="ui fluid category search">
+        <div class="ui fluid icon input">
+          <input class="prompt" type="text" placeholder="Search clubs...">
+          <i class="search icon"></i>
+        </div>
       </div>
-      <button class="ui button" type="submit">Search</button>
-      <button class="ui button" type="submit">Advanced Search</button>
     </div>
   </div>
 
