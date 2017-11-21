@@ -1,18 +1,162 @@
 <template name="List_Page">
-
   <div class="ui grid">
-    <div class="ui grid">
-
-      <div class="row">
-        <div class="ui right aligned sixteen wide column">
-          {{> Cas_Login }}
+    <div class="centered row">
+      <h1 class="landing-section-1-welcome"> List Page</h1>
+    </div>
+  </div>
+  <div class="ui menu">
+    <a class="item" href="/">Home</a>
+    <a class="item">Search</a>
+    <a class="item">List</a>
+    <div class="right menu">
+      <a class="item">Logout</a>
+    </div>
+  </div>
+  <div class="ui grid">
+    <div class="left aligned four wide column">
+      <div class="ui vertical menu">
+        <div class="content menu">
+          <h2 class="ui header centered">Index</h2>
+          <a class="item" href="#acm">ACM</a>
+          <a class="item" href="#arc">Architecture</a>
+          <a class="item" href="#bus">Business</a>
+          <a class="item" href="#eng">Engineering</a>
+          <a class="item" href="#frat">Fraternity/Sorority</a>
+          <a class="item" href="#law">Law</a>
+          <a class="item" href="#lang">Language</a>
+          <a class="item" href="#lei">Leisure</a>
+          <a class="item" href="#lit">Literature</a>
+          <a class="item" href="#rel">Religion</a>
+          <a class="item" href="#sci">Science</a>
+          <a class="item" href="#sport">Sports</a>
         </div>
-
       </div>
-      <div class="row">
-        <div class="ui center aligned sixteen wide column">
-          <h1 class="landing-section-1-welcome">Welcome to BowFolios</h1>
-        </div>
+    </div>
+
+
+    <div class="eight wide column">
+      <div class="ACM">
+        <a class="anchor active" id="acm"></a>
+        <h3 class="ui header">ACM</h3>
+        <ul>
+          <li>Academy for Creative Media Student Associatio</li>
+          <li>Association for Computing Machinery at Manoa</li>
+        </ul>
+      </div>
+      <div class="Architecture">
+        <a class="anchor active" id="arc"></a>
+        <h3 class="ui header">Architecture</h3>
+        <ul>
+          <li>American Institute of Architecture Students</li>
+        </ul>
+      </div>
+      <div class="Business">
+        <a class="anchor active" id="bus"></a>
+        <h3 class="ui header">Business</h3>
+        <ul>
+          <li>Accounting Club</li>
+          <li>American Marketing Association</li>
+          <li>Business Executive Society of Tomorrow</li>
+        </ul>
+      </div>
+      <div class="Engineering">
+        <a class="anchor active" id="eng"></a>
+        <h3 class="ui header">Engineering</h3>
+        <ul>
+          <li>American Society of Civil Engineers</li>
+          <li>American Society of Mechanical Engineers</li>
+          <li>Chi Epsilon</li>
+        </ul>
+      </div>
+      <div class="Frat/Sor">
+        <a class="anchor active" id="frat"></a>
+        <h3 class="ui header">Fraternity/Sorority</h3>
+        <ul>
+          <li>Alpha Gamma Delta</li>
+          <li>Beta Alpha Psi</li>
+          <li>Beta Beta Gamma Sorority</li>
+        </ul>
+      </div>
+      <div class="Law">
+        <a class="anchor active" id="law"></a>
+        <h3 class="ui header">Law</h3>
+        <ul>
+          <li>Advocates for Public Interest Law</li>
+        </ul>
+      </div>
+      <div class="Language">
+        <a class="anchor active" id="lang"></a>
+        <h3 class="ui header">Language</h3>
+        <ul>
+          <li>Association of Chinese Scholars in Hawaii (ACSH)</li>
+          <li>Chinese Language Flagship Club</li>
+          <li>Chinese Students and Scholars Association</li>
+        </ul>
+      </div>
+      <div class="Leisure">
+        <a class="anchor active" id="lei"></a>
+        <h3 class="ui header">Leisure</h3>
+        <ul>
+          <li>Anime Manga Society</li>
+          <li>Atherton YMCA</li>
+          <li>Association of Leaders, Philanthropists, and Hawaiian Activists</li>
+          <li>Bachelor of Social Work Organization</li>
+          <li>BAMP + Electric Palms Club</li>
+          <li>Belly Dance Raqs – Manoa</li>
+          <li>Best Buddies Hawaii</li>
+          <li>Black Student Association</li>
+          <li>Breathe Aloha</li>
+          <li>Buddhi Yoga Manoa</li>
+          <li>Chess Club</li>
+          <li>Circle K International</li>
+          <li>Clay Club at UHM</li>
+          <li>Club Managers Association of America POP Student Chapter</li>
+          <li>Coalition to Stop Campus Hunger</li>
+        </ul>
+      </div>
+      <div class="Literature">
+        <a class="anchor active" id="lit"></a>
+        <h3 class="ui header">Literature</h3>
+        <ul>
+          <li>American Library Association Hawai'I Student Chapter</li>
+        </ul>
+      </div>
+      <div class="Religion">
+        <a class="anchor active" id="rel"></a>
+        <h3 class="ui header">Religion</h3>
+        <ul>
+          <li>Aloha Navs</li>
+          <li>Baha'i Association at UH Manoa</li>
+          <li>Baptist Collegiate Ministries</li>
+          <li>Buddhism in Action</li>
+          <li>Campus Chinese Christian Fellowship</li>
+          <li>Church in Honolulu</li>
+        </ul>
+      </div>
+      <div class="Science">
+        <a class="anchor active" id="sci"></a>
+        <h3 class="ui header">Science</h3>
+        <ul>
+          <li>American Cetacean Society Student Coalition at the University of Hawai'i</li>
+          <li>American Water Works Association Hawaii</li>
+          <li>Anthropology Undergraduate Student Association</li>
+          <li>Arnold Air Society</li>
+          <li>Balloon Satellite Mission at University of Hawaii at Manoa</li>
+          <li>Biological Engineering Student Association</li>
+          <li>Botanical Society of America Student Chapter at University of Hawaii at Manoa</li>
+          <li>Chemistry Club</li>
+        </ul>
+      </div>
+      <div class="Sports">
+        <a class="anchor active" id="sport"></a>
+        <h3 class="ui header">Sports</h3>
+        <ul>
+          <li>Aikido Club at UHM</li>
+          <li>Aloha Runnning Club at the University of Hawai`I at Manoa</li>
+          <li>Alohathon Dance Marathon</li>
+          <li>Athletic Training Student Society</li>
+          <li>Capoeira Senzala</li>
+        </ul>
       </div>
     </div>
   </div>
