@@ -1,6 +1,40 @@
 <template name="Landing_Page">
 
+<<<<<<< HEAD
   {{> page_header }}
+=======
+  <div class="landing-section-1">
+    <div class="ui grid">
+      <div class="row">
+        <a class="{{ isActiveRoute 'Landing_Page' }} ui centered image" href="{{ pathFor 'Landing_Page'}}"
+           id="main_pic"><img class="ui centered image" src="/images/header_pic.png"></a>
+      </div>
+    </div>
+  </div>
+  <div style="background: #1B1C1D; padding-top: 25px;">
+    <div class="ui container">
+      <div class="ui fluid category search">
+        <div class="ui fluid icon input">
+          <input class="prompt" type="text" placeholder="Search clubs...">
+          <i class="search icon"></i>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div style="margin: 0px; border-radius: 0px;" class="ui borderless inverted menu">
+    <div class="ui container">
+      <a class="item" href="/"><h1>HOME</h1></a>
+      <a class="item" href="/search">SEARCH</a>
+      <a class="item" href="/list">LISTS</a>
+      {{#if currentUser}}
+        <a class="{{ isActiveRoute 'Add_Stuff_Page'}} item" href="{{ pathFor 'Add_Stuff_Page' }}">PROFILE</a>
+      {{/if}}
+      <div class="right item">
+        {{> Cas_Login }}
+      </div>
+    </div>
+  </div>
+>>>>>>> pictures
 
   <div class="spotlight">
     <div class="ui container">
@@ -23,16 +57,22 @@
     <div class="ui container">
       <h1 style="padding-bottom: 25px;">Interests</h1>
     </div>
-    <div class="ui container">
-      <span>
-        <img class="ui medium image" src="/images/academics.png">
-      </span>
-      <span>
-        <img class="ui medium image" src="/images/music.png">
-      </span>
-      <span>
-        <img class="ui medium image" src="/images/sports.png">
-      </span>
+    <div class="ui three column grid">
+      <div class="column">
+        <a href="/list">
+        <img class="ui medium centered image" src="/images/academics.png">
+        </a>
+      </div>
+      <div class="column">
+        <a href="/list">
+          <img class="ui medium centered image" src="/images/music.png">
+        </a>
+      </div>
+      <div class="column">
+        <a href="/list#sport">
+          <img class="ui medium centered image" src="/images/sports.png">
+        </a>
+      </div>
     </div>
   </div>
   {{> page_footer }}
