@@ -13,6 +13,22 @@ FlowRouter.route('/', {
   },
 });
 
+export const searchPageRouteName = 'Search_Page';
+FlowRouter.route('/search', {
+  name: searchPageRouteName,
+  action() {
+    BlazeLayout.render('Search_Page', { main: searchPageRouteName });
+  },
+});
+
+export const listPageRouteName = 'List_Page';
+FlowRouter.route('/list', {
+  name: searchPageRouteName,
+  action() {
+    BlazeLayout.render('List_Page', { main: listPageRouteName });
+  },
+});
+
 /*                        DIRECTORY ROUTE                       */
 
 function addDirectoryBodyClass() {

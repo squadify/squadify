@@ -17,7 +17,6 @@ Accounts.onLogin(function onLogin() {
 
   if (initialLogin) {
     const username = Meteor.user().profile.name;
-    FlowRouter.go(`/${username}/profile`);
   }
 });
 
