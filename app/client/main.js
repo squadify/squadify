@@ -3,6 +3,7 @@ import '/imports/ui/components/form-controls';
 import '/imports/ui/components/directory';
 import '/imports/ui/components/user';
 import '/imports/ui/components/landing';
+import '/imports/ui/components/header';
 import '/imports/ui/layouts/directory';
 import '/imports/ui/layouts/landing';
 import '/imports/ui/layouts/shared';
@@ -15,4 +16,5 @@ import '/imports/ui/pages/list';
 import '/imports/api/base';
 import '/imports/api/profile';
 import '/imports/api/interest';
+
 
