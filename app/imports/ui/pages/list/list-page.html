@@ -1,22 +1,10 @@
 <template name="List_Page">
-  <div class="ui grid">
-    <div class="centered row">
-      <h1 class="landing-section-1-welcome"> List Page</h1>
-    </div>
-  </div>
-  <div class="ui menu">
-    <a class="item" href="/">Home</a>
-    <a class="item">Search</a>
-    <a class="item">List</a>
-    <div class="right menu">
-      <a class="item">Logout</a>
-    </div>
-  </div>
+  {{> page_header}}
   <div class="ui grid">
     <div class="left aligned four wide column">
       <div class="ui vertical menu">
         <div class="content menu">
-          <h2 class="ui header centered">Index</h2>
+          <h2 style="padding-top: 25px;" class="ui header centered">Index</h2>
           <a class="item" href="#acm">ACM</a>
           <a class="item" href="#arc">Architecture</a>
           <a class="item" href="#bus">Business</a>
@@ -160,4 +148,5 @@
       </div>
     </div>
   </div>
+  {{>page_footer}}
 </template>
