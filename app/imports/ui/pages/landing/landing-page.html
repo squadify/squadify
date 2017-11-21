@@ -24,7 +24,7 @@
       <a class="item" href="/search">SEARCH</a>
       <a class="item" href="/list">LISTS</a>
       {{#if currentUser}}
-      <a class="{{ isActiveRoute 'Add_Stuff_Page'}} item" href="{{ pathFor 'Add_Stuff_Page' }}">PROFILE</a>
+        <a class="{{ isActiveRoute 'Add_Stuff_Page'}} item" href="{{ pathFor 'Add_Stuff_Page' }}">PROFILE</a>
       {{/if}}
       <div class="right item">
         {{> Cas_Login }}
@@ -53,16 +53,16 @@
     <div class="ui container">
       <h1 style="padding-bottom: 25px;">Interests</h1>
     </div>
-    <div class="ui container">
-      <span>
-        <img class="ui medium image" src="/images/academics.png">
-      </span>
-      <span>
-        <img class="ui medium image" src="/images/music.png">
-      </span>
-      <span>
-        <img class="ui medium image" src="/images/sports.png">
-      </span>
+    <div class="ui three column grid">
+      <div class="column">
+        <img class="ui medium centered image" src="/images/academics.png">
+      </div>
+      <div class="column">
+        <img class="ui medium centered image" src="/images/music.png">
+      </div>
+      <div class="column">
+        <img class="ui medium centered image" src="/images/sports.png">
+      </div>
     </div>
   </div>
   <div style="padding-bottom: 50px; padding-top: 50px; background: #1B1C1D;">
