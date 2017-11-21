@@ -18,7 +18,8 @@ FlowRouter.route('/list', {
   name: listPage,
   action() {
     BlazeLayout.render('List_Page', { main: listPage })
-  }
+  },
+});
 
 export const searchPageRouteName = 'Search_Page';
 FlowRouter.route('/search', {
