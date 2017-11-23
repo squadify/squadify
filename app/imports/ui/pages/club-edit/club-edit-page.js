@@ -1,13 +1,13 @@
 import { Template } from 'meteor/templating';
 import { $ } from 'meteor/jquery';
 
-Template.Club_Page.onCreated(function onCreated() {
+Template.Club_Edit_Page.onCreated(function onCreated() {
 });
 
-Template.Club_Page.helpers({
+Template.Club_Edit_Page.helpers({
 });
 
-Template.Club_Page.events({
+Template.Club_Edit_Page.events({
   'click .next-to-right': function () {
     console.log('clicked right button');
     $('.dog.image').transition('fade right');
@@ -19,6 +19,6 @@ Template.Club_Page.events({
     $('.dog.image').transition('fade right');
   },
   'click .huge.green.button': function () {
-    console.log('apply');
+    console.log('submit');
   },
 });
