@@ -8,7 +8,7 @@ import { Interests } from '/imports/api/interest/InterestCollection';
 const displaySuccessMessage = 'displaySuccessMessage';
 const displayErrorMessages = 'displayErrorMessages';
 
-Template.Profile_Page.onCreated(function onCreated() {
+/*Template.Profile_Page.onCreated(function onCreated() {
   this.subscribe(Interests.getPublicationName());
   this.subscribe(Profiles.getPublicationName());
   this.messageFlags = new ReactiveDict();
@@ -77,5 +77,5 @@ Template.Profile_Page.events({
       instance.messageFlags.set(displayErrorMessages, true);
     }
   },
-});
+});*/
 
