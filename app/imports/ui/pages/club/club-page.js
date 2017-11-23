@@ -1,5 +1,6 @@
 import { Template } from 'meteor/templating';
 import { $ } from 'meteor/jquery';
+import { FlowRouter } from 'meteor/kadira:flow-router';
 
 Template.Club_Page.onCreated(function onCreated() {
 });
@@ -20,5 +21,6 @@ Template.Club_Page.events({
   },
   'click .huge.green.button': function () {
     console.log('apply');
+    FlowRouter.route('/');
   },
 });
