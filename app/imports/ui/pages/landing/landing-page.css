@@ -1,27 +1,28 @@
 .landing-section-1 {
-  padding: 10px 10px 30px 10px;
-  background-color: #00B5AD;
+  background-color: #102105;
   color: #E5F9E7;
 }
 
-.landing-section-2 {
-  padding: 20px 10px 20px 10px;
+#main_pic {
+}
+
+.spotlight {
+  font-family: 'Roboto', sans-serif;
+  padding: 20px 10px 50px 10px;
   background-color: #E5F9E7;
   color:  #00B5AD;
 }
 
-.landing-section-3 {
-  padding: 20px 10px 30px 30px;
-  background-color: #00B5AD;
-  color: #E5F9E7;
-}
-
-.landing-section-5 {
+.search_boxes{
+  font-family: 'Roboto', sans-serif;
   padding: 20px 10px 20px 10px;
   background-color: #00B5AD;
   color: #E5F9E7;
 }
 
+.clubSearch{
+  width: 90%;
+}
 
 .landing-section-1-welcome {
   font-family: 'Roboto', sans-serif;

@@ -2,7 +2,6 @@ import { FlowRouter } from 'meteor/kadira:flow-router';
 import { BlazeLayout } from 'meteor/kadira:blaze-layout';
 import { $ } from 'meteor/jquery';
 
-
 /*                        LANDING ROUTE                       */
 
 export const landingPageRouteName = 'Landing_Page';
@@ -10,6 +9,31 @@ FlowRouter.route('/', {
   name: landingPageRouteName,
   action() {
     BlazeLayout.render('Landing_Layout', { main: landingPageRouteName });
+  },
+});
+
+/*                        LIST PAGE                            */
+export const listPage = 'List_Page';
+FlowRouter.route('/list', {
+  name: listPage,
+  action() {
+    BlazeLayout.render('List_Page', { main: listPage })
+  },
+});
+
+export const searchPageRouteName = 'Search_Page';
+FlowRouter.route('/search', {
+  name: searchPageRouteName,
+  action() {
+    BlazeLayout.render('Search_Page', { main: searchPageRouteName });
+  },
+});
+
+export const listPageRouteName = 'List_Page';
+FlowRouter.route('/list', {
+  name: searchPageRouteName,
+  action() {
+    BlazeLayout.render('List_Page', { main: listPageRouteName });
   },
 });
 
@@ -33,9 +57,7 @@ FlowRouter.route('/directory', {
   triggersExit: [removeDirectoryBodyClass],
 });
 
-
 /*                        USER ROUTES                      */
-
 
 function addUserBodyClass() {
   $('body').addClass('user-layout-body');
@@ -67,6 +89,7 @@ userRoutes.route('/filter', {
     BlazeLayout.render('User_Layout', { main: filterPageRouteName });
   },
 });
+;
 
 /*                        MISC ROUTES                       */
 FlowRouter.notFound = {
