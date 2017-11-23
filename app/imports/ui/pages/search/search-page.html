@@ -1,0 +1,48 @@
+<template name="Search_Page">
+
+  {{> page_header}}
+  <div class="ui container">
+    <div class="ui form">
+      <div class="field">
+        <label>Name</label>
+        <input type="text" placeholder="Club Name">
+      </div>
+      <div class="field">
+        <label>Type</label>
+        <div class="ui selection dropdown">
+          <input type="hidden" name="type">
+          <i class="dropdown icon"></i>
+          <div class="default text">Type</div>
+          <div class="menu">
+            <div class="item" data-value="male" data-text="Male">
+              <i class="male icon"></i>
+              Male
+            </div>
+            <div class="item" data-value="female" data-text="Female">
+              <i class="female icon"></i>
+              Female
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="field">
+        <label>Tags</label>
+        <select multiple class="ui dropdown">
+          <option value="">Select Tag</option>
+          <option value="ACM">ACM</option>
+          <option value="Sports">Sports</option>
+          <option value="Leisure">Leisure</option>
+        </select>
+      </div>
+    </div>
+  </div>
+  {{> page_footer }}
+
+  <script>
+    $('.ui.dropdown')
+        .dropdown()
+    ;
+  </script>
+
+
+</template>
