@@ -1,0 +1,93 @@
+<template name="Club_Edit_Page">
+
+  {{#if Template.subscriptionsReady}}
+
+  <div class="ui container">
+    <div class="ui sixteen wide grid">
+      <div class="sixteen wide centered row">
+        <h1 class="ui dividing header">UH Manoa ACM Club</h1>
+      </div>
+
+      <div class="ui middle aligned row">
+        <div class="two wide column left-button-div">
+          <button class="ui left floated big icon next-to-right button">
+            <i class="chevron left icon"></i>
+          </button>
+        </div>
+        <div class="twelve wide column">
+          <img class="ui big centered bordered dog image" src="https://i.ytimg.com/vi/SfLV8hD7zX4/maxresdefault.jpg">
+        </div>
+        <div class="two wide column right-button-div">
+          <button class="ui right floated big icon next-to-left button">
+            <i class="chevron right icon"></i>
+          </button>
+        </div>
+      </div>
+
+      <div class="ui twelve wide centered column">
+        <div class="ui form">
+          <div class="field">
+            <label>Summary</label>
+            <textarea rows="7"></textarea>
+          </div>
+        </div>
+      </div>
+
+      <div class="ui twelve wide centered column">
+
+        <div class="ui form">
+          <div class="inline fields">
+            <div class="eight wide field">
+              <i class="mail big icon" type="email"></i>
+              <input type="text" placeholder="Email">
+            </div>
+            <div class="eight wide field">
+              <i class="facebook big square icon" type="facebook"></i>
+              <input type="text" placeholder="Facebook">
+            </div>
+          </div>
+        </div>
+
+        <div class="ui form">
+          <div class="inline fields">
+            <div class="eight wide field">
+              <i class="twitter big square icon" type="twitter"></i>
+              <input type="text" placeholder="Twitter">
+            </div>
+            <div class="eight wide field">
+              <i class="instagram square big icon" type="instagram"></i>
+              <input type="text" placeholder="Instagram">
+            </div>
+          </div>
+        </div>
+
+      </div>
+
+      <div class="ui twelve wide centered column">
+
+        <div class="ui twelve wide row">
+
+          <div class="ui four wide left aligned row">
+            <label for="file" class="ui icon button">
+              <i class="file icon"></i>
+              Open File</label>
+            <input type="file" id="file" style="display:none">
+
+            <div class="ui disabled input">
+              <input style="width: 570px;" type="text" placeholder="C:/...">
+            </div>
+          </div>
+
+        </div>
+      </div>
+
+      <div class="ui centered row">
+        <a href="/club"><button class="ui huge green button" type="submit">Submit</button></a>
+      </div>
+
+    </div>
+  </div>
+
+  {{/if}}
+
+</template>
