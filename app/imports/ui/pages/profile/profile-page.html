@@ -23,7 +23,20 @@
       </div>
 
       <div id="interest_select" class="field">
-        {{> Select_Form_Control label="Interests" options=([{label: "Architecture", value: "architect"} {label: "Business", value: "business"}]) errorMessage=(fieldError "interests") multiple=true }}
+        <select class="ui fluid search dropdown" multiple="true">
+          <option value="">Interest</option>
+          <option value="architecture">Architecture</option>
+          <option value="business">Business</option>
+          <option value="engineering">Engineering</option>
+          <option value="fraternity">Fraternity</option>
+          <option value="law">Law</option>
+          <option value="language">Language</option>
+          <option value="leisure">Leisure</option>
+          <option value="literature">Literature</option>
+          <option value="religion">Religion</option>
+          <option value="science">Science</option>
+          <option value="sports">Sports</option>
+        </select>
       </div>
 
       <button class="ui primary button" type="submit">Submit</button>
@@ -37,5 +50,10 @@
 
   {{> page_footer}}
   <!--{{/if}}-->
+
+  <script>
+    $('.ui.dropdown')
+    .dropdown();
+  </script>
 
 </template>
