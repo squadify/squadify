@@ -1,0 +1,59 @@
+<template name="Profile_Page">
+
+  <!--{{#if Template.subscriptionsReady}}-->
+  {{> page_header }}
+
+  <div class="ui text container segment">
+    <div class="ui dividing header">
+      Profile
+    </div>
+    <form class="ui equal width form profile-data-form {{ successClass }} {{ errorClass }}">
+
+      <div class="fields">
+        {{> Text_Form_Control label="First" placeholder="Philip" value=profile.firstName errorMessage=(fieldError
+        "firstName")}}
+        {{> Text_Form_Control label="Last" placeholder="Johnson" value=profile.lastName errorMessage=(fieldError
+        "lastName")}}
+
+      </div>
+
+      <div class="field">
+        {{> Text_Form_Control label="Phone Number" placeholder="XXX-XXX-XXXX" value=profile.number errorMessage=(fieldError
+        "number")}}
+      </div>
+
+      <div id="interest_select" class="field">
+        <select class="ui fluid search dropdown" multiple="true">
+          <option value="">Interest</option>
+          <option value="architecture">Architecture</option>
+          <option value="business">Business</option>
+          <option value="engineering">Engineering</option>
+          <option value="fraternity">Fraternity</option>
+          <option value="law">Law</option>
+          <option value="language">Language</option>
+          <option value="leisure">Leisure</option>
+          <option value="literature">Literature</option>
+          <option value="religion">Religion</option>
+          <option value="science">Science</option>
+          <option value="sports">Sports</option>
+        </select>
+      </div>
+
+      <button class="ui primary button" type="submit">Submit</button>
+      <!--{{#if displaySuccessMessage}}
+        <div class="ui success message">
+          <p>Profile data successfully updated.</p>
+        </div>
+      {{/if}}-->
+    </form>
+  </div>
+
+  {{> page_footer}}
+  <!--{{/if}}-->
+
+  <script>
+    $('.ui.dropdown')
+    .dropdown();
+  </script>
+
+</template>
