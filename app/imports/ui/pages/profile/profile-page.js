@@ -44,6 +44,8 @@ Template.Profile_Page.helpers({
 Template.Profile_Page.events({
   'submit .profile-data-form'(event, instance) {
     event.preventDefault();
+    console.log(event);
+    console.log(instance);
     const firstName = event.target.First.value;
     const lastName = event.target.Last.value;
     const title = event.target.Title.value;
