@@ -107,3 +107,13 @@ FlowRouter.route('/club', {
     BlazeLayout.render('Club_Layout', { main: clubPageRoutName });
   },
 });
+
+/*                        CLUB EDIT ROUTE                       */
+
+export const clubEditPageRoutName = 'Club_Edit_Page';
+FlowRouter.route('/club_edit', {
+  name: clubEditPageRoutName,
+  action() {
+    BlazeLayout.render('Club_Edit_Layout', { main: clubEditPageRoutName });
+  },
+});
