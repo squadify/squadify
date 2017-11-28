@@ -2,6 +2,140 @@
   "comment": "Initial contents for the BowFolios database. For development purposes only.",
   "collections": [
     {
+      "name": "InterestsCollection",
+      "contents": [
+        {
+          "name": "Academics"
+        },
+        {
+          "name": "Activism"
+        },
+        {
+          "name": "Architecture"
+        },
+        {
+          "name": "Arts"
+        },
+        {
+          "name": "Asian"
+        },
+        {
+          "name": "Biology"
+        },
+        {
+          "name": "Business"
+        },
+        {
+          "name": "Chemistry"
+        },
+        {
+          "name": "Chinese"
+        },
+        {
+          "name": "Computer Science"
+        },
+        {
+          "name": "Cultural"
+        },
+        {
+          "name": "Dance"
+        },
+        {
+          "name": "Engineering"
+        },
+        {
+          "name": "Environment"
+        },
+        {
+          "name": "Ethnic"
+        },
+        {
+          "name": "Fashion"
+        },
+        {
+          "name": "Finance"
+        },
+        {
+          "name": "Greek Life"
+        },
+        {
+          "name": "Hawaiian"
+        },
+        {
+          "name": "Health"
+        },
+        {
+          "name": "Honor Society"
+        },
+        {
+          "name": "Japanese"
+        },
+        {
+          "name": "Language"
+        },
+        {
+          "name": "Law"
+        },
+        {
+          "name": "Leadership"
+        },
+        {
+          "name": "Lesiure"
+        },
+        {
+          "name": "Marketing"
+        },
+        {
+          "name": "Math"
+        },
+        {
+          "name": "Medical"
+        },
+        {
+          "name": "Music"
+        },
+        {
+          "name": "Politics "
+        },
+        {
+          "name": "Polynesian"
+        },
+        {
+          "name": "Professional"
+        },
+        {
+          "name": "Religious"
+        },
+        {
+          "name": "Research"
+        },
+        {
+          "name": "Science"
+        },
+        {
+          "name": "Service"
+        },
+        {
+          "name": "Social"
+        },
+        {
+          "name": "Speech"
+        },
+        {
+          "name": "Sports"
+        },
+        {
+          "name": "Student Government"
+        },
+        {
+          "name": "Technology"
+        },
+        {
+          "name": "Theater"
+        }
+      ]
+    },
+    {
       "name": "InterestCollection",
       "contents": [
         {
