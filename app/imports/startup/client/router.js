@@ -29,11 +29,11 @@ FlowRouter.route('/search', {
   },
 });
 
-export const listPageRouteName = 'List_Page';
-FlowRouter.route('/list', {
-  name: searchPageRouteName,
+export const profilePageRouteName = 'Profile_Page';
+FlowRouter.route('/profile', {
+  name: profilePageRouteName,
   action() {
-    BlazeLayout.render('List_Page', { main: listPageRouteName });
+    BlazeLayout.render('Profile_Page', { main: profilePageRouteName })
   },
 });
 
@@ -72,14 +72,6 @@ const userRoutes = FlowRouter.group({
   name: 'userRoutes',
   triggersEnter: [addUserBodyClass],
   triggersExit: [removeUserBodyClass],
-});
-
-export const profilePageRouteName = 'Profile_Page';
-userRoutes.route('/profile', {
-  name: profilePageRouteName,
-  action() {
-    BlazeLayout.render('User_Layout', { main: profilePageRouteName });
-  },
 });
 
 export const filterPageRouteName = 'Filter_Page';
