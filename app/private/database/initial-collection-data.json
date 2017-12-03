@@ -136,6 +136,23 @@
       ]
     },
     {
+      "name": "ClubCollection",
+      "contents": [
+        {
+          "name":"",
+          "leaders":"",
+          "bio":"",
+          "interests":"",
+          "pictures":"",
+          "email":"",
+          "facebook":"",
+          "twitter":"",
+          "instagram":""
+
+        }
+      ]
+    }
+    {
       "name": "InterestCollection",
       "contents": [
         {
