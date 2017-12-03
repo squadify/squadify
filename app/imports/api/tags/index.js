@@ -1,0 +1,1 @@
+import './InterestsCollection.js';
