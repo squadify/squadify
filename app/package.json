@@ -9,8 +9,14 @@
   },
   "dependencies": {
     "babel-runtime": "^6.18.0",
+    "brain": "^0.7.0",
+    "lapack": "^0.1.0",
     "meteor-node-stubs": "~0.2.0",
-    "simpl-schema": "^0.3.2"
+    "mimir": "0.0.1",
+    "natural": "^0.5.4",
+    "simpl-schema": "^0.3.2",
+    "stopwords": "0.0.8",
+    "wordnet-db": "^3.1.6"
   },
   "devDependencies": {
     "autoprefixer": "^6.3.1",
