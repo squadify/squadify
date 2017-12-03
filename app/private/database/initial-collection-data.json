@@ -813,6 +813,383 @@
           "website":"",
           "apply": false
         },
+        {
+          "name":"Japanese Culture Club",
+          "leaders":[
+            "Jin-Woo Nam"
+          ],
+          "bio":"Japanese Culture Club is an organization that promotes Japanese culture to the students of the University of Hawaii at Manoa. Our goal is to spread and understand Japanese culture. We have done community services, intercultural exchanges with students from Japan, and many social events.",
+          "interests":[
+            "Japanese",
+            "Cultural",
+            "Ethnic",
+            "Social"
+          ],
+          "pictures":[
+            "/images/japanese_culture_club_logo.jpg"
+          ],
+          "email":"jcc@hawaii.edu",
+          "facebook":"https://www.facebook.com/jccuhmanoa",
+          "twitter":"",
+          "instagram":"",
+          "website":"https://uhmjcc.weebly.com/",
+          "apply": true
+        },
+        {
+          "name":"Judo Club",
+          "leaders":[
+            "Ben Gwerder"
+          ],
+          "bio":"The 'Judo Club/Team at the University of Hawaii' is a Registered Independent Organization (RIO) of the University of Hawaii at Manoa. The club/team is open to registered students or affiliates of the University of Hawaii at Manoa.",
+          "interests":[
+            "Sports",
+            "Social"
+          ],
+          "pictures":[
+            "http://www2.hawaii.edu/~judo/JudoTeam2014.JPG"
+          ],
+          "email":"judo@hawaii.edu",
+          "facebook":"https://www.facebook.com/jccuhmanoa",
+          "twitter":"",
+          "instagram":"",
+          "website":"http://www2.hawaii.edu/~judo/",
+          "apply": false
+        },
+        {
+          "name":"Katipunan Club",
+          "leaders":[
+            "Sandra Magbual"
+          ],
+          "bio":"KATIPUNAN is the name given to the Kapatiran ng mga Estudyanteng Nag-aaral ng Pilipino sa Unibersidad ng Hawai’i (Confraternity of students taking Filipino courses at the University of Hawai’i System). The name was inspired by the secret society founded by Philippine hero Andres Bonifacio during the Filipino-Spanish War in 1896. This society specifically used Tagalog (the basis of the Filipino language) in their communications and rituals in order to promote their unity and identity.",
+          "interests":[
+            "Asian",
+            "Social"
+          ],
+          "pictures":[
+            "http://manoa.hawaii.edu/rio/katipunan/wp-content/uploads/2015/10/sdfa.jpg"
+          ],
+          "email":"katipunan.club@gmail.com",
+          "facebook":"https://www.facebook.com/katipunanclub",
+          "twitter":"https://twitter.com/katipunanclub",
+          "instagram":"https://www.instagram.com/katipunanclub/",
+          "website":"http://manoa.hawaii.edu/rio/katipunan",
+          "apply": true
+        },
+        {
+          "name":"Late Night Theatre",
+          "leaders":[
+            "Todd Stephen Farley"
+          ],
+          "bio":"Late Night Theatre is dedicated to the production of challenging, performer-focused theatre that adventures into the dangerous territory of the unexpected. The company strives to present a kind of theatre not otherwise available to Honolulu audiences by producing challenging works from some of today's most dynamic playwrights as well as by offering opportunities for the production of new scripts and performer-generated work.",
+          "interests":[
+            "Theatre",
+            "Social",
+            "Arts"
+          ],
+          "pictures":[
+            "/images/late_night_theatre_logo.jpg"
+          ],
+          "email":"tsfarley@hawaii.edu",
+          "facebook":"https://www.facebook.com/LateNightTheatreUHM/",
+          "twitter":"",
+          "instagram":"",
+          "website":"",
+          "apply": true
+        },
+        {
+          "name":"Manoa Peer Advisors",
+          "leaders":[
+            "Sheana Humphries"
+          ],
+          "bio":"MPA is a prestigious and elite group of students trained to help their peers navigate college. It consists of a Summer Training Program and a year-round MPA Fellowship. The program is overseen by professional advisors and is spearheaded by trained undergraduate Peer Advisor Leaders (PALs).",
+          "interests":[
+            "Theatre",
+            "Social",
+            "Arts"
+          ],
+          "pictures":[
+            "http://i60.tinypic.com/2j6peh.jpg",
+            "http://i60.tinypic.com/16asa69.jpg"
+          ],
+          "email":"uhmpa@hawaii.edu",
+          "facebook":"https://www.facebook.com/manoapeeradvisors/",
+          "twitter":"https://twitter.com/uhmpa",
+          "instagram":"",
+          "website":"http://manoa.hawaii.edu/undergrad/mac/mpa/",
+          "apply": false
+        },
+        {
+          "name":"Manoa Ultimate Disc",
+          "leaders":[
+            "Christopher Shuler"
+          ],
+          "bio":"",
+          "interests":[
+            "Sports",
+            "Leisure",
+            "Social"
+          ],
+          "pictures":[
+            ""
+          ],
+          "email":"cshuler@hawaii.edu",
+          "facebook":"",
+          "twitter":"",
+          "instagram":"",
+          "website":"",
+          "apply": false
+        },
+        {
+          "name":"Na Hawai'I 'Imi Loa Hui Haumana",
+          "leaders":[
+            "Erica T. Dias"
+          ],
+          "bio":"Our mission is to service the Hawaiian community, by strengthening the Native Hawaiian presence in the Library and Information Sciences profession, and by building the capacity of the Hawaiian community in Library and Information Sciences practices.",
+          "interests":[
+            "Polynesian",
+            "Politics",
+            "Social"
+          ],
+          "pictures":[
+            ""
+          ],
+          "email":"nhil@hawaii.edu",
+          "facebook":"",
+          "twitter":"",
+          "instagram":"",
+          "website":"",
+          "apply": false
+        },
+        {
+          "name":"National Society of Collegiate Scholars",
+          "leaders":[
+            "Kealani Turingan"
+          ],
+          "bio":"We are not your average honors organization. We recognize academic achievement and provide opportunities for members to develop leadership skills. Members positively change their campuses and communities by participating in service activities as they prepare for future endeavors like internships, graduate school, and careers. Along the way, members often make valuable connections with fellow high-achieving students.",
+          "interests":[
+            "Honor Society",
+            "Service",
+            "Social"
+          ],
+          "pictures":[
+            "http://www.nscs.org/app/themes/nscs_theme/dist/images/nscs_logo.png"
+          ],
+          "email":"nhil@hawaii.edu",
+          "facebook":"https://www.facebook.com/nscs.hawaii/",
+          "twitter":"",
+          "instagram":"",
+          "website":"http://www.nscs.org/",
+          "apply": false
+        },
+        {
+          "name":"Pacific-Asian Legal Studies Organization",
+          "leaders":[
+            "Melody Leilani Kaohu"
+          ],
+          "bio":"Founded in 1997 at the University of Hawai'i at Mānoa, William S. Richardson School of Law, the Pacific-Asian Legal Studies Organization (PALSO) is one of the school’s oldest student-led organizations. Today, PALSO envelops an enthusiastic and active cadre of students, providing a springboard for all to explore the wealth of opportunities that abound and providing support to each student in his or her professional development, legal studies and career pursuits..",
+          "interests":[
+            "Law",
+            "Professional",
+            "Politics"
+          ],
+          "pictures":[
+            "http://manoa.hawaii.edu/law/pals/palso_files/shapeimage_3.png",
+            "http://manoa.hawaii.edu/law/pals/palso_files/shapeimage_2.png"
+          ],
+          "email":"uhmpalso@hawaii.edu",
+          "facebook":"https://www.facebook.com/wsrlpals",
+          "twitter":"https://twitter.com/wsrlpals",
+          "instagram":"",
+          "website":"http://manoa.hawaii.edu/law/pals/palso.html",
+          "apply": false
+        },
+        {
+          "name":"Pi Tau Sigma",
+          "leaders":[
+            "Keanu Kim"
+          ],
+          "bio":"Pi Tau Sigma is the national Honorary Mechanical Engineering Fraternity and is a member of the Association of College Honor Societies. With 159 chapters installed, all but two currently maintain active status. There are chapters at universities in almost every state of the United States.",
+          "interests":[
+            "Honor Society",
+            "Engineering",
+            "Professional"
+          ],
+          "pictures":[
+            "http://web.eng.hawaii.edu/~pts/img/pts-color.png"
+          ],
+          "email":"uhm.sigmapi@gmail.com",
+          "facebook":"https://www.facebook.com/HawaiiSigmaPi/",
+          "twitter":"",
+          "instagram":"",
+          "website":"http://uhmsigmapi.wixsite.com/pitau",
+          "apply": false
+        },
+        {
+          "name":"Pre-Medical Association",
+          "leaders":[
+            "Jessica Cabusog"
+          ],
+          "bio":"Members are exposed to the different specialities in the field of medicine through Q&A sessions with health care professionals and physicians, hands-on opportunities such as a suture lab and a casting lab, and many other activities provided by PMA. Many are in conjunction with large healthcare facilities on Oahu and with JABSOM.",
+          "interests":[
+            "Health",
+            "Academic",
+            "Professional"
+          ],
+          "pictures":[
+            "http://static1.squarespace.com/static/57cb3928d482e9784e3f3431/t/57cb3bf9cd0f686bb5d7d0c6/1511947755130/?format=1500w"
+          ],
+          "email":"premed@hawaii.edu",
+          "facebook":"",
+          "twitter":"",
+          "instagram":"https://www.instagram.com/premed_uhm/?hl=en",
+          "website":"http://premed-at-uhm.squarespace.com/",
+          "apply": true
+        },
+        {
+          "name":"Rainbow Jugglers Juggling Club",
+          "leaders":[
+            "Stephen Case"
+          ],
+          "bio":"We meet every Monday at 8:00pm at the U.H. Manoa athletic complex, studio 3, Honolulu, HI, . All skill levels are welcome. Come and join us and have fun!  Free!!",
+          "interests":[
+            "Leisure",
+            "Social"
+          ],
+          "pictures":[
+            "http://www2.hawaii.edu/~jugglers/images/WaikikisurfJUG3.jpg"
+          ],
+          "email":"jugglers@hawaii.edu",
+          "facebook":"",
+          "twitter":"",
+          "instagram":"",
+          "website":"http://www.rainbowjugglers.org/",
+          "apply": false
+        },
+        {
+          "name":"Rotaract Club",
+          "leaders":[
+            "Paige Cajudoy"
+          ],
+          "bio":"Rotaract at the University of Hawaii is a Rotary-sponsored service club for young men and women ages 18 to 30. The purpose of Rotaract is to address the physical and social needs of the community while promoting international understanding and peace through a framework of friendship and service projects. There are five avenues of service in which Rotaract members can get involved in: community, international, vocational, new generation, and club service.",
+          "interests":[
+            "Service",
+            "Social"
+          ],
+          "pictures":[
+            "/images/rotaract_club_logo.jpg"
+          ],
+          "email":"rotaract@hawaii.edu",
+          "facebook":"https://www.facebook.com/UHManoaRotaract/",
+          "twitter":"",
+          "instagram":"https://www.instagram.com/rotaractuh/",
+          "website":"",
+          "apply": true
+        },
+        {
+          "name":"Sierra Student Coalition",
+          "leaders":[
+            "Charessa Fryc"
+          ],
+          "bio":"Through education, action, and advocacy, we raise awareness about the local choices that will ensure a greener, more just future for Hawaiʻi and its people. We continue to work hard to prevent the worst of the climate crises, hold polluters accountable, and address existing harms to our environment and public health.",
+          "interests":[
+            "Service",
+            "Environment",
+            "Social"
+          ],
+          "pictures":[
+            "https://sierraclubhawaii.org/wp-content/uploads/2016/08/cropped-headersmaller.png"
+          ],
+          "email":"charessa@hawaii.edu",
+          "facebook":"https://www.facebook.com/sierraclubhawaii/",
+          "twitter":"https://twitter.com/sierraclubhi/",
+          "instagram":"https://www.instagram.com/sierraclubhi/",
+          "website":"https://sierraclubhawaii.org",
+          "apply": false
+        },
+        {
+          "name":"Smash Bros. Club",
+          "leaders":[
+            "Thomas Choe"
+          ],
+          "bio":"Smash Bros., what else can you say",
+          "interests":[
+            "Leisure",
+            "Social"
+          ],
+          "pictures":[
+            ""
+          ],
+          "email":"uhmsmash@gmail.com",
+          "facebook":"",
+          "twitter":"",
+          "instagram":"",
+          "website":"",
+          "apply": false
+        },
+        {
+          "name":"Society for Human Resources Management",
+          "leaders":[
+            "Bell Trieu"
+          ],
+          "bio":"The Society for Human Resource Management, Aloha Chapter, promotes collaboration and interaction among diverse individuals with an expressed interest in the study of Human Resources Management and its theories, practices, and applications. The Aloha Chapter provides members with specialized resources and unique opportunities to develop a professional foundation in preparation for the Hawaii business community.",
+          "interests":[
+            "Business",
+            "Academic",
+            "Professional",
+            "Social"
+          ],
+          "pictures":[
+            "http://shrmuhm.com/wp-content/uploads/2012/07/TheSHRMAloha_Logo-300x300.jpg"
+          ],
+          "email":"shrm@hawaii.edu",
+          "facebook":"https://www.facebook.com/shrmuhm",
+          "twitter":"",
+          "instagram":"",
+          "website":"http://shrmuhm.com/",
+          "apply": false
+        },
+        {
+          "name":"Table Tennis Club",
+          "leaders":[
+            "Kevin 'Sonny' Ornellas"
+          ],
+          "bio":"",
+          "interests":[
+            "Sports",
+            "Leisure",
+            "Social"
+          ],
+          "pictures":[
+            ""
+          ],
+          "email":"kevindo4@hawaii.edu",
+          "facebook":"",
+          "twitter":"",
+          "instagram":"",
+          "website":"",
+          "apply": false
+        },
+        {
+          "name":"Vietnamese Student Organization",
+          "leaders":[
+            "Kevin Ly"
+          ],
+          "bio":"VSOUH is a Registered Independent Organization at the University of Hawai`i at Mānoa. Our goal is to promote understanding and appreciation for the Vietnamese culture. We organize many events to experience and study the colorful history, customs and traditions of Vietnam.",
+          "interests":[
+            "Asian",
+            "Ethnic",
+            "Cultural"
+          ],
+          "pictures":[
+            "/images/vietnamese_student_organization_officers.jpg"
+          ],
+          "email":"vsoatuh@gmail.com",
+          "facebook":"https://www.facebook.com/groups/VSOatUHM/?fref=ts",
+          "twitter":"",
+          "instagram":"",
+          "website":"http://vsoatuhm.webs.com/",
+          "apply": true
+        },
       ]
     },
     {
