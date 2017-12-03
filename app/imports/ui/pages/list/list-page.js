@@ -1,8 +1,10 @@
 import { Template } from 'meteor/templating';
 import { Clubs } from '/imports/api/clubprofile/ClubProfileCollection';
+import { Tags } from '/imports/api/tags/InterestsCollection';
 
 Template.List_Page.onCreated(function onCreated() {
   this.subscribe(Clubs.getPublicationName());
+  this.subscribe(Tags.getPublicationName());
 });
 
 Template.List_Page.helpers({
@@ -11,5 +13,8 @@ Template.List_Page.helpers({
    */
   clubs() {
     return Clubs.find({}, { sort: { name: 1 } });
+  },
+  tags() {
+    return Tags.find({}, { sort: { name: 1 } });
   }
 });
