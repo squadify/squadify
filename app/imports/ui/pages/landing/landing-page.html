@@ -1,17 +1,20 @@
 <template name="Landing_Page">
   {{> page_header }}
-
   <div class="spotlight">
+    {{#if Template.subscriptionsReady}}
+    {{#each club in clubs}}
     <div class="ui container">
       <h1>Spotlight Organization</h1>
       <a style="font-size: 20px; font-weight: bold;" href="/club">{{ club.name }}</a>
-      <img style="padding-top: 25px;" class="ui large image"
-           src="http://acmanoa.github.io/images/ACM_Manoa_Wordmark.png">
+      <img style="padding-top: 25px;" class="ui rounded large image"
+           src="{{ club.pictures.[0] }}">
       <h3>Summary:</h3>
       <p style="padding-bottom: 50px;">
         {{ club.bio }}
       </p>
     </div>
+    {{/each}}
+    {{/if}}
     <div class="ui container">
       <h1 style="padding-bottom: 25px;">Interests</h1>
     </div>

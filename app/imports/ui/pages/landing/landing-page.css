@@ -9,15 +9,15 @@
 .spotlight {
   font-family: 'Roboto', sans-serif;
   padding: 20px 10px 50px 10px;
-  background-color: #E5F9E7;
-  color:  #00B5AD;
+  background-color: #ffffff;
+  color:  #102105;
 }
 
 .search_boxes{
   font-family: 'Roboto', sans-serif;
   padding: 20px 10px 20px 10px;
-  background-color: #00B5AD;
-  color: #E5F9E7;
+  background-color: #ffffff;
+  color: #102105;
 }
 
 .clubSearch{
