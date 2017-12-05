@@ -11,13 +11,11 @@ Template.Landing_Page.helpers({
    * Returns a cursor to profiles, sorted by last name.
    */
   clubs() {
-    var club = Clubs.find({}, {fields: {bio: 1}});
+    let club = Clubs.find({}, {fields: {bio: 1}});
     club = _.sample(Object.values(club.collection._docs._map));
-    console.log(club)
     while(club.pictures.length < 1) {
       club = Clubs.find({}, {fields: {bio: 1}});
       club = _.sample(Object.values(club.collection._docs._map));
-      console.log(club);
     }
     return [club];
   }
