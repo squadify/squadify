@@ -19,6 +19,7 @@ Template.Club_Page.onCreated(function onCreated() {
 });
 
 Template.Club_Page.helpers({
+  /*
   successClass() {
     return Template.instance().messageFlags.get(displaySuccessMessage) ? 'success' : '';
   },
@@ -28,9 +29,8 @@ Template.Club_Page.helpers({
   errorClass() {
     return Template.instance().messageFlags.get(displayErrorMessages) ? 'error' : '';
   },
-  clubs() {
-    return Clubs.find({}, { sort: { name: 1 } });
-  },
+  */
+
   /*
   profile() {
     return Profiles.findDoc(FlowRouter.getParam('username'));
