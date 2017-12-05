@@ -3,6 +3,7 @@ import { ReactiveDict } from 'meteor/reactive-dict';
 import { FlowRouter } from 'meteor/kadira:flow-router';
 import { _ } from 'meteor/underscore';
 import { $ } from 'meteor/jquery';
+import { Clubs } from '/imports/api/clubprofile/ClubProfileCollection';
 
 const displaySuccessMessage = 'displaySuccessMessage';
 const displayErrorMessages = 'displayErrorMessages';
@@ -10,6 +11,7 @@ const displayErrorMessages = 'displayErrorMessages';
 Template.Club_Page.onCreated(function onCreated() {
   // this.subscribe(Interests.getPublicationName());
   // this.subscribe(Profiles.getPublicationName());
+  this.subscribe(Clubs.getPublicationName());
   this.messageFlags = new ReactiveDict();
   this.messageFlags.set(displaySuccessMessage, false);
   this.messageFlags.set(displayErrorMessages, false);
@@ -25,6 +27,10 @@ Template.Club_Page.helpers({
   },
   errorClass() {
     return Template.instance().messageFlags.get(displayErrorMessages) ? 'error' : '';
+  },
+  clubProfiles() {
+    console.log(Clubs.find({}, { sort: { name: 1 } }));
+    return Clubs.find({}, { sort: { name: 1 } });
   },
   /*
   profile() {
@@ -67,19 +73,18 @@ Template.Club_Page.events({
         .modal('show')
     ;
   },
-  /*
   'submit .actions'(event, instance) {
     event.preventDefault();
     console.log('submit');
     console.log(event);
-    const name = event.target.Name.value;
+    const name = event.target.Name;
     const email = event.target.Email.value;
     const text = event.target.TextArea.value;
 
     console.log(name);
     console.log(email);
     console.log(text);
-
+    /*
     const title = event.target.Title.value;
     const username = FlowRouter.getParam('username'); // schema requires username.
     const picture = event.target.Picture.value;
@@ -108,6 +113,7 @@ Template.Club_Page.events({
       instance.messageFlags.set(displaySuccessMessage, false);
       instance.messageFlags.set(displayErrorMessages, true);
     }
-  },
+
   */
+  },
 });
