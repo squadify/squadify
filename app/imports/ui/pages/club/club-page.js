@@ -28,8 +28,7 @@ Template.Club_Page.helpers({
   errorClass() {
     return Template.instance().messageFlags.get(displayErrorMessages) ? 'error' : '';
   },
-  clubProfiles() {
-    console.log(Clubs.find({}, { sort: { name: 1 } }));
+  clubs() {
     return Clubs.find({}, { sort: { name: 1 } });
   },
   /*
