@@ -2,7 +2,7 @@
   "comment": "Initial contents for the BowFolios database. For development purposes only.",
   "collections": [
     {
-      "name": "InterestsCollection",
+      "name": "TagsCollection",
       "contents": [
         {
           "name": "Academics"
@@ -144,7 +144,7 @@
             "Josh Lee"
           ],
           "bio":"Established in 1964, the Accounting Club is a proud Student Chapter of the Institute of Management Accountants whose main goal is to promote the professional and personal development of its members. In cooperation with the School of Accountancy, we provide additional perspectives and supplemental information concerning public, private, and governmental accounting through carefully planned social and business-oriented events. We continue to rank high among the largest student organizations within the Shidler College of Business and welcome students from all academic disciplines.",
-          "interests":[
+          "tags":[
             "Academics",
             "Business",
             "Finance",
@@ -166,7 +166,7 @@
             "Cameron Bunch"
           ],
           "bio":"In 2006, the Navigators leadership made a commitment to start 10 new ministries on ethnically diverse campuses in the United States. University of Hawaii was on the top of that list. Greg and Emily Bryan(Previously Campus ministers at a thriving ministry in Ohio), along with their two kids Nora and Burke have felt the call to step into this strategic ministry and have been currently living in Hawaii preparing for staff to come over this year, such a sweet opportunity that I get to be a part of this! They believe reaching and discipling students at the University of Hawaii is a strategic way to make disciples of all nations. And the hope is that life time laborers would be raised up at UH who would advance the gospel all over the world to help fulfill Christ’s Great Commission.",
-          "interests":[
+          "tags":[
             "Religious",
             "Service"
           ],
@@ -186,7 +186,7 @@
             "Lena Robledo"
           ],
           "bio":"Alpha Gamma Delta is an international women's fraternity that promotes academic excellence, philanthropic giving, ongoing leadership, personal development, and above all, a spirit of loving sisterhood. Guided by our Purpose, Alpha Gams strive to attain a higher standard, thereby improving their lives, the lives of those around them and the communities in which they live. Together, we continually work to inspire the woman and impact the world.",
-          "interests":[
+          "tags":[
             "Greek Life",
             "Social"
           ],
@@ -207,7 +207,7 @@
             "Kristoffer Jugueta"
           ],
           "bio":"To promote excellence in architecture education, training and practice.  To foster an appreciation of architecture and related disciplines.  To enrich communities in a spirit of collaboration.  To organize students and combine their efforts to advance the art and science of architecture.",
-          "interests":[
+          "tags":[
             "Academics",
             "Architecture",
             "Environment",
@@ -229,7 +229,7 @@
             "Dakota Chun"
           ],
           "bio":"#AMAGrowth embodies the goals, challenges, and triumphs that we will experience throughout the year. We as a chapter will unite under all circumstances to empower and support each other. The American Marketing Association at UHM is about creating connections, strengthening bonds, and growing in personal and professional ways. Together, we will endure, succeed, and grow.",
-          "interests":[
+          "tags":[
             "Academics",
             "Marketing",
             "Professional"
@@ -250,7 +250,7 @@
             "Leah Miyasato"
           ],
           "bio":"The American Society of Civil Engineers (ASCE) student chapter at the University of Hawaii at Manoa is a proud organization geared towards promoting the civil engineering profession and providing a better understanding of the field outside of the classroom. From memorable socials and fundraisers to sharing triumphs in activities such as steel bridge and concrete canoe, the student chapter is ideal for meeting, as well as bonding with fellow aspiring civil engineers. Not only is the student chapter a prime source for developing new and lasting relationships, but it is also a gateway for expanding a student's network through frequent interactions with the ASCE Hawaii Section and the Young Member Forum (YMF). Inspirational speakers from an immense spectrum of engineering firms and companies also takes part in our general meetings to further educate and enlighten students about the civil engineering world. ",
-          "interests":[
+          "tags":[
             "Academics",
             "Engineering",
             "Professional",
@@ -273,7 +273,7 @@
             "Barryn Chun"
           ],
           "bio":"We, the Anime Manga Society are an open community of people who love to watch Japanese anime, read manga, have an interest in gaming, cosplay, Japanese culture, western comics/animation, or anything related– and we aim to be a gathering place for people with these interests to meet, hang out, get involved with the community and have fun. We hold weekly meetings during which we watch member-picked showings, host holiday events, and interact with local conventions.",
-          "interests":[
+          "tags":[
             "Social",
             "Cultural",
             "Asian",
@@ -295,7 +295,7 @@
             "Mahealani Wilson"
           ],
           "bio":"The Undergraduate Anthropology Student Association (AUSA) is a student-led organization of Anthropology-inspired students who have an innate ambition to excel academically and make a difference within their campus community. AUSA provides fellow undergraduate Anthropology majors (and non-majors as well!) access to an incredible amount of opportunities, including but not limited to: Networking amongst undergraduates interested in Anthropology, creating new relationships, getting involved within and outside the UH campus community by participating in community service events, getting awareness regarding field school, grants, fellowships and research opportunities within the Department of Anthropology, and much more! If you are interested in becoming a part of AUSA, please feel free to contact us at AUSA@hawaii.edu and we will get you added to our mailing list!",
-          "interests":[
+          "tags":[
             "Academics",
             "Social",
             "Cultural"
@@ -316,7 +316,7 @@
             "Brian Mayeshiro"
           ],
           "bio":"The Association for Computing Machinery at Manoa is UH Manoa’s student chapter of the Association for Computing Machinery. We are a Registered Independent Organization (RIO) focused on providing opportunities and resources for our members’ personal and professional advancement. ACManoa has 3 pillars - social, professional, and technical. We hold social activities for our members to have fun as well as develop and strengthen their interpersonal relationships. We strive to connect our members to professionals in the industry, abroad and within the Honolulu community. We are largely comprised of aspiring professionals in the computing industry; accordingly, members in ACManoa are encouraged to join and create Special Interest Groups (SIG) and Playgrounds where they can collaborate on interesting projects.",
-          "interests":[
+          "tags":[
             "Academics",
             "Computer Science",
             "Technology",
@@ -338,7 +338,7 @@
             "Ivan Wen"
           ],
           "bio":"",
-          "interests":[
+          "tags":[
             "Academics",
             "Chinese",
             "Professional"
@@ -359,7 +359,7 @@
             "Cuong Tran"
           ],
           "bio":"Throughout its deepening storied history, Atherton has served the college student community and the community at large through its residence hall, young adult programs and myriad of service projects.",
-          "interests":[
+          "tags":[
             "Social",
             "Service"
           ],
@@ -379,7 +379,7 @@
             "Kristina Kornegay"
           ],
           "bio":"Baptist Collegiate Ministries (BCM) O‘ahu exists to lead college students to an authentic and growing relationship with Christ that produces in them a passion for God, a desire to live holy, and a vision to impact their campuses and the world.",
-          "interests":[
+          "tags":[
             "Religious"
           ],
           "pictures":[
@@ -398,7 +398,7 @@
             "Georgeanna Bowen"
           ],
           "bio":"The Beta Beta Gamma Sorority is a cosmopolitan Greek fraternal organization at the University of Hawaii at Manoa. It was founded in 1948 for the development of leadership, community service, long lasting friendships, and career planning through alumnae relations.",
-          "interests":[
+          "tags":[
             "Greek Life",
             "Social"
           ],
@@ -418,7 +418,7 @@
             "Veronica Gibson"
           ],
           "bio":"",
-          "interests":[
+          "tags":[
             "Sports",
             "Leisure"
           ],
@@ -438,7 +438,7 @@
             "Nikki Lau"
           ],
           "bio":"The Business Executive Society of Tomorrow is a general business club at the University of Hawaii at Manoa Shidler College of Business.  We are a club of hard-working individuals dedicated to personal growth and professional development.  Since its founding in 1998, BEST has set a high standard for its members. To gain admittance into the club, we require a minimum 3.1 cumulative GPA.  We also maintain a strict 56-member cap, which keeps our club close-knit.  Every semester we recruit new members of all business majors, as well as pre-business students and those pursuing business minors.",
-          "interests":[
+          "tags":[
             "Academic",
             "Business",
             "Leadership"
@@ -459,7 +459,7 @@
             "Yasmeen Mansour"
           ],
           "bio":"In the spring of 1922 two groups of civil engineering students at the University of Illinois, one calling itself Chi Epsilon, and the other calling itself Chi Delta Chi, independently of each other, took steps to petition the faculty for permission to establish an honorary civil engineering fraternity. As soon as the existence of the two groups became known to each other, plans were immediately propagated to merge the two groups. On May 22, 1952, the Chi Epsilon Fraternity was founded. Since then, Chi Epsilon has grown to 133 chapters (of which 125 are active), with over 106,368 initiated members as of September 2009. The University of Hawaii Chapter of Chi Epsilon was founded in 1957 as the 49th chapter. Mr. Randall Akiona is currently the Pacific District National Councilor and National Council Vice President and Dr. Phillip Ooi is the faculty advisor. The University of Hawaii Chapter has 16 active members who participate in various activities, events, and projects. The emphasis of the Hawaii Chapter is to develop sound traits of character and technical ability among civil engineers to push the standard of professional service.",
-          "interests":[
+          "tags":[
             "Academic",
             "Honor Society",
             "Engineering",
@@ -482,7 +482,7 @@
             "Lin Song"
           ],
           "bio":"夏威夷大学中国学生学者联谊会 始建于1984年，历经28年27任主席，现有会员600余人。我们希望能够尽自己的力量，为在这里的中国同学，尤其是新生提供最大的帮助。同时，在社会方面，我们也一直和美中友协，中国总商会夏威夷分会，中国俱乐部,大陆华人同胞联谊会，香港中国夏威夷商会等当地华人组织保持友好往来。",
-          "interests":[
+          "tags":[
             "Chinese",
             "Cultural",
             "Social"
@@ -503,7 +503,7 @@
             "Ace Jaedrin Cabato"
           ],
           "bio":"Circle K International at the University of Hawai`i at Manoa was founded in 1978. Circle K International Division: Paradise District: Cal-Nev-Ha (California, Nevada, Hawai`i Sub-region: B",
-          "interests":[
+          "tags":[
             "Service",
             "Social"
           ],
@@ -523,7 +523,7 @@
             "Joannie Dobbs"
           ],
           "bio":"",
-          "interests":[
+          "tags":[
             "Activism",
             "Leadership"
           ],
@@ -543,7 +543,7 @@
             "Daniel Tschudi"
           ],
           "bio":"",
-          "interests":[
+          "tags":[
             "Arts",
             "Social",
             "Dance"
@@ -564,7 +564,7 @@
             "Herbert Allen"
           ],
           "bio":"Founded in 2008, Cycle Manoa is a student volunteer organization dedicated to promoting and enabling cycling on the University of Hawaii campus, and throughout the Island.  We provide bike repairs to students, and the general public, for free, and parts at cost, as well as hands on learning of bike repair. If there’s something wrong with your bike, stop by and we’ll help you fix it!",
-          "interests":[
+          "tags":[
             "Sports",
             "Social",
             "Health"
@@ -585,7 +585,7 @@
             "Robert Matsumura"
           ],
           "bio":"The University of Hawaii at Manoa Chapter of the internationally affiliated professional fraternity, Delta Sigma Pi. We are an organization that exists to foster the study and growth of young business professionals. Founded in 2012, we are a member of the Shidler College of Business's Inter Business Council, a growing presence on campus that continues to increase each year. Our brothers are a group of sharp minded individuals with a strong focus on brotherhood, professionalism, scholastic development, and community service.",
-          "interests":[
+          "tags":[
             "Business",
             "Leadership",
             "Social",
@@ -607,7 +607,7 @@
             "Jaynie Gaoiran"
           ],
           "bio":"The Engineers’ Council at the University of Hawaiʻi (ECUH) is a student-operated executive board, consisting of elected executive board (officer) positions, affiliate College of Engineering (COE) student organization representatives, and a general member body.  The mission of the ECUH is to provide unity action through cooperative, transparent, and effective representation of the student body of the COE at the University of Hawaiʻi at Mānoa.  By collaborating with students, faculty, affiliate student organizations, and professional partners, the ECUH serves to promote academic, intellectual, cultural, and social understanding throughout the COE, and to provide students with the finest education environment possible.",
-          "interests":[
+          "tags":[
             "Engineering",
             "Leadership",
             "Professional"
@@ -628,7 +628,7 @@
             "Kevin Cho"
           ],
           "bio":"Eta Kappa Nu (HKN) is the international honor society for electrical and computer engineers. It was founded at the University of Illinois at Urbana-Champaign in 1904. Since then, it has grown to over 150 chapters across the globe. Members consist of students, alumni, and other professionals who have demonstrated exceptional academic and professional accomplishments. Student members are selected on the basis of scholastic standing, an impeccable character, and excellent leadership skills. The Delta Omega chapter of HKN was founded in 1963 at the University of Hawai'i at Manoa. Based in the islands of Hawai‘i, our mission is to encourage excellence within the electrical and computer engineering fields, as well as providing service to our community through volunteering and community service projects.",
-          "interests":[
+          "tags":[
             "Engineering",
             "Leadership",
             "Professional",
@@ -650,7 +650,7 @@
             "Jared Matsuki"
           ],
           "bio":"Eta Sigma Delta (ESD) is an international hospitality honor society that recognizes the academic excellence of students pursuing a degree in hospitality, tourism and culinary arts. ESD members consist of students who have completed at least 50% of the credit hours for graduation, are of at least sophomore standing, have obtained a 3.0 or higher cumulative GPA, and are within the top 20 percentile of their class. ESD focuses on a commitment to service. Student members work with groups including Ronald McDonald House Charities, Hawai'i Food Bank, and Na Ala Hele, organizing community service projects. ESD members pay a one time membership fee and host fundraisers to help subsidize costs of events for their members.",
-          "interests":[
+          "tags":[
             "Social",
             "Service",
             "Honor Society"
@@ -671,7 +671,7 @@
             "Daniella Orias"
           ],
           "bio":"We are a group of medical students interested in the primary care field of Family Medicine.  FM focuses on values like continuity of care, community outreach and patient education.  It is our goal for FMIG to reflect these same values.",
-          "interests":[
+          "tags":[
             "Social",
             "Professional",
             "Health"
@@ -692,7 +692,7 @@
             "Florencia Banse"
           ],
           "bio":"",
-          "interests":[
+          "tags":[
             "Social",
             "Ethnic",
             "Polynesian",
@@ -714,7 +714,7 @@
             "Jason Wong"
           ],
           "bio":"",
-          "interests":[
+          "tags":[
             "Dance",
             "Social",
             "Leisure"
@@ -735,7 +735,7 @@
             "Tyler Chong"
           ],
           "bio":"The Grey Hats is a student-led, extracurricular organization focused on real-world training for cyber defense. Membership gives students an outstanding opportunity to learn and apply critical skills, attack and defend systems, and to network with others interested in modern security issues.",
-          "interests":[
+          "tags":[
             "Computer Science",
             "Social",
             "Professional"
@@ -756,7 +756,7 @@
             "Nicholas Loi"
           ],
           "bio":"HOSA at University of Hawaii at Manoa is a local chapter of Hawaii HOSA and National HOSA: Future Health Professionals.",
-          "interests":[
+          "tags":[
             "Health",
             "Social",
             "Professional"
@@ -777,7 +777,7 @@
             "Joslyn Jamada"
           ],
           "bio":"IEEE at UHM is a student-led club on campus for all majors. We are an associated student organization with ECUH and a registered RIO with the university. Our club room is located in HH411. Throughout the year, we hold various professional and casual events for our members to enjoy. Whether you want to learn how to program, solder, or just have fun we have events for all occasions. Come check us out!",
-          "interests":[
+          "tags":[
             "Engineering",
             "Social",
             "Professional"
@@ -798,7 +798,7 @@
             "Sabrina Summers"
           ],
           "bio":"",
-          "interests":[
+          "tags":[
             "Religious",
             "Social",
             "Service"
@@ -819,7 +819,7 @@
             "Jin-Woo Nam"
           ],
           "bio":"Japanese Culture Club is an organization that promotes Japanese culture to the students of the University of Hawaii at Manoa. Our goal is to spread and understand Japanese culture. We have done community services, intercultural exchanges with students from Japan, and many social events.",
-          "interests":[
+          "tags":[
             "Japanese",
             "Cultural",
             "Ethnic",
@@ -841,7 +841,7 @@
             "Ben Gwerder"
           ],
           "bio":"The 'Judo Club/Team at the University of Hawaii' is a Registered Independent Organization (RIO) of the University of Hawaii at Manoa. The club/team is open to registered students or affiliates of the University of Hawaii at Manoa.",
-          "interests":[
+          "tags":[
             "Sports",
             "Social"
           ],
@@ -861,7 +861,7 @@
             "Sandra Magbual"
           ],
           "bio":"KATIPUNAN is the name given to the Kapatiran ng mga Estudyanteng Nag-aaral ng Pilipino sa Unibersidad ng Hawai’i (Confraternity of students taking Filipino courses at the University of Hawai’i System). The name was inspired by the secret society founded by Philippine hero Andres Bonifacio during the Filipino-Spanish War in 1896. This society specifically used Tagalog (the basis of the Filipino language) in their communications and rituals in order to promote their unity and identity.",
-          "interests":[
+          "tags":[
             "Asian",
             "Social"
           ],
@@ -881,7 +881,7 @@
             "Todd Stephen Farley"
           ],
           "bio":"Late Night Theatre is dedicated to the production of challenging, performer-focused theatre that adventures into the dangerous territory of the unexpected. The company strives to present a kind of theatre not otherwise available to Honolulu audiences by producing challenging works from some of today's most dynamic playwrights as well as by offering opportunities for the production of new scripts and performer-generated work.",
-          "interests":[
+          "tags":[
             "Theatre",
             "Social",
             "Arts"
@@ -902,7 +902,7 @@
             "Sheana Humphries"
           ],
           "bio":"MPA is a prestigious and elite group of students trained to help their peers navigate college. It consists of a Summer Training Program and a year-round MPA Fellowship. The program is overseen by professional advisors and is spearheaded by trained undergraduate Peer Advisor Leaders (PALs).",
-          "interests":[
+          "tags":[
             "Theatre",
             "Social",
             "Arts"
@@ -924,7 +924,7 @@
             "Christopher Shuler"
           ],
           "bio":"",
-          "interests":[
+          "tags":[
             "Sports",
             "Leisure",
             "Social"
@@ -945,7 +945,7 @@
             "Erica T. Dias"
           ],
           "bio":"Our mission is to service the Hawaiian community, by strengthening the Native Hawaiian presence in the Library and Information Sciences profession, and by building the capacity of the Hawaiian community in Library and Information Sciences practices.",
-          "interests":[
+          "tags":[
             "Polynesian",
             "Politics",
             "Social"
@@ -966,7 +966,7 @@
             "Kealani Turingan"
           ],
           "bio":"We are not your average honors organization. We recognize academic achievement and provide opportunities for members to develop leadership skills. Members positively change their campuses and communities by participating in service activities as they prepare for future endeavors like internships, graduate school, and careers. Along the way, members often make valuable connections with fellow high-achieving students.",
-          "interests":[
+          "tags":[
             "Honor Society",
             "Service",
             "Social"
@@ -987,7 +987,7 @@
             "Melody Leilani Kaohu"
           ],
           "bio":"Founded in 1997 at the University of Hawai'i at Mānoa, William S. Richardson School of Law, the Pacific-Asian Legal Studies Organization (PALSO) is one of the school’s oldest student-led organizations. Today, PALSO envelops an enthusiastic and active cadre of students, providing a springboard for all to explore the wealth of opportunities that abound and providing support to each student in his or her professional development, legal studies and career pursuits..",
-          "interests":[
+          "tags":[
             "Law",
             "Professional",
             "Politics"
@@ -1009,7 +1009,7 @@
             "Keanu Kim"
           ],
           "bio":"Pi Tau Sigma is the national Honorary Mechanical Engineering Fraternity and is a member of the Association of College Honor Societies. With 159 chapters installed, all but two currently maintain active status. There are chapters at universities in almost every state of the United States.",
-          "interests":[
+          "tags":[
             "Honor Society",
             "Engineering",
             "Professional"
@@ -1030,7 +1030,7 @@
             "Jessica Cabusog"
           ],
           "bio":"Members are exposed to the different specialities in the field of medicine through Q&A sessions with health care professionals and physicians, hands-on opportunities such as a suture lab and a casting lab, and many other activities provided by PMA. Many are in conjunction with large healthcare facilities on Oahu and with JABSOM.",
-          "interests":[
+          "tags":[
             "Health",
             "Academic",
             "Professional"
@@ -1051,7 +1051,7 @@
             "Stephen Case"
           ],
           "bio":"We meet every Monday at 8:00pm at the U.H. Manoa athletic complex, studio 3, Honolulu, HI, . All skill levels are welcome. Come and join us and have fun!  Free!!",
-          "interests":[
+          "tags":[
             "Leisure",
             "Social"
           ],
@@ -1071,7 +1071,7 @@
             "Paige Cajudoy"
           ],
           "bio":"Rotaract at the University of Hawaii is a Rotary-sponsored service club for young men and women ages 18 to 30. The purpose of Rotaract is to address the physical and social needs of the community while promoting international understanding and peace through a framework of friendship and service projects. There are five avenues of service in which Rotaract members can get involved in: community, international, vocational, new generation, and club service.",
-          "interests":[
+          "tags":[
             "Service",
             "Social"
           ],
@@ -1091,7 +1091,7 @@
             "Charessa Fryc"
           ],
           "bio":"Through education, action, and advocacy, we raise awareness about the local choices that will ensure a greener, more just future for Hawaiʻi and its people. We continue to work hard to prevent the worst of the climate crises, hold polluters accountable, and address existing harms to our environment and public health.",
-          "interests":[
+          "tags":[
             "Service",
             "Environment",
             "Social"
@@ -1112,7 +1112,7 @@
             "Thomas Choe"
           ],
           "bio":"Smash Bros., what else can you say",
-          "interests":[
+          "tags":[
             "Leisure",
             "Social"
           ],
@@ -1132,7 +1132,7 @@
             "Bell Trieu"
           ],
           "bio":"The Society for Human Resource Management, Aloha Chapter, promotes collaboration and interaction among diverse individuals with an expressed interest in the study of Human Resources Management and its theories, practices, and applications. The Aloha Chapter provides members with specialized resources and unique opportunities to develop a professional foundation in preparation for the Hawaii business community.",
-          "interests":[
+          "tags":[
             "Business",
             "Academic",
             "Professional",
@@ -1154,7 +1154,7 @@
             "Kevin 'Sonny' Ornellas"
           ],
           "bio":"",
-          "interests":[
+          "tags":[
             "Sports",
             "Leisure",
             "Social"
@@ -1175,7 +1175,7 @@
             "Kevin Ly"
           ],
           "bio":"VSOUH is a Registered Independent Organization at the University of Hawai`i at Mānoa. Our goal is to promote understanding and appreciation for the Vietnamese culture. We organize many events to experience and study the colorful history, customs and traditions of Vietnam.",
-          "interests":[
+          "tags":[
             "Asian",
             "Ethnic",
             "Cultural"
@@ -1281,7 +1281,7 @@
           "lastName": "Altenberg",
           "username": "altenber",
           "bio": "I am an Associate Professor of Information and Computer Sciences at the University of Hawaii.",
-          "interests": [
+          "tags": [
             "Evolutionary Computation"
           ],
           "title": "Associate Professor, Information and Computer Sciences",
@@ -1293,7 +1293,7 @@
           "lastName": "Baek",
           "username": "baek",
           "bio": "I am an Associate Professor of Information and Computer Sciences at the University of Hawaii.",
-          "interests": [
+          "tags": [
             "Computer Vision"
           ],
           "title": "Associate Professor, Information and Computer Sciences",
@@ -1305,7 +1305,7 @@
           "lastName": "Biagioni",
           "username": "esb",
           "bio": "I am an Associate Professor of Information and Computer Sciences at the University of Hawaii.",
-          "interests": [
+          "tags": [
             "Mobile Networks",
             "Sailing"
           ],

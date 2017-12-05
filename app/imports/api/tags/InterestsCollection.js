@@ -5,7 +5,7 @@ import { Meteor } from 'meteor/meteor';
 import { _ } from 'meteor/underscore';
 import { Tracker } from 'meteor/tracker';
 
-/** @module Interest */
+/** @module Tag */
 
 /**
  * Represents a specific interest, such as "Software Engineering".

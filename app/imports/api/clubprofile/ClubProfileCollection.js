@@ -24,7 +24,7 @@ class ClubProfileCollection extends BaseCollection {
       leaders: { type: Array, optional: true },
       'leaders.$': { type: String },
       bio: { type: String, optional: true },
-      interests: { type: Array, optional: true },
+      tags: { type: Array, optional: true },
       'tags.$': { type: String },
       pictures: { type: Array, optional: true },
       'pictures.$': { type: SimpleSchema.RegEx.Url },
@@ -63,13 +63,13 @@ class ClubProfileCollection extends BaseCollection {
     check({ name, bio }, checkPattern);
 
     // Throw an error if any of the passed Interest names are not defined.
-    Tags.assertNames(tags);
+    /*Tags.assertNames(tags);
 
     // Throw an error if there are duplicates in the passed interest names.
     if (tags.length !== _.uniq(tags).length) {
       throw new Meteor.Error(`${tags} contains duplicates`);
     }
-
+*/
     return this._collection.insert({ name, leaders, bio, tags, pictures, email, facebook, instagram });
   }
 
