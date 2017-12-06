@@ -1,0 +1,1 @@
+import './club-list.html';
