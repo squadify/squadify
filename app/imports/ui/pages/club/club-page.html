@@ -25,22 +25,33 @@
       </div>
 
       <div class="ui row">
-        <div class="four wide column">
-          <i class="mail big icon"></i>
-          <a href=#>yong4@hawaii.edu</a>
-        </div>
-        <div class="four wide column">
-          <i class="facebook big square icon"></i>
-          <a href=#>yong4@hawaii.edu</a>
-        </div>
-        <div class="four wide column">
-          <i class="twitter big square icon"></i>
-          <a href=#>yong4@hawaii.edu</a>
-        </div>
-        <div class="four wide column">
-          <i class="instagram square big icon"></i>
-          <a href=#>yong4@hawaii.edu</a>
-        </div>
+        {{#each clubb in club }}
+          {{ #if clubb.email }}
+            <div class="eight wide column">
+             <i class="mail big icon"></i>
+             <a href=#>{{ clubb.email }}</a>
+            </div>
+          {{ /if }}
+          {{ #if clubb.facebook }}
+            <div class="eight wide column">
+              <i class="facebook big square icon"></i>
+              <a href=#>{{ clubb.facebook }}</a>
+            </div>
+          {{ /if }}
+          {{ #if clubb.twitter }}
+            <div class="eight wide column">
+              <i class="twitter big square icon"></i>
+              <a href=#>{{ clubb.twitter }}</a>
+            </div>
+          {{ /if }}
+          {{ #if clubb.instagram }}
+            <div class="eight wide column">
+              <i class="instagram square big icon"></i>
+              <a href=#>{{ clubb.instagram }}</a>
+            </div>
+          {{ /if }}
+        {{ /each }}
+
       </div>
 
       <div class="ui centered row">
@@ -75,6 +86,12 @@
       <div class="ui deny button">Cancel</div>
       <button class="ui approve button" type="submit">Submit</button>
     </div>
+  </div>
+
+  <div class="eight wide column">
+    {{#each clubb in club }}
+    <li>{{ clubb.mail }}</li>
+    {{/each}}
   </div>
 
   {{/if}}

@@ -1,14 +1,34 @@
 import { Template } from 'meteor/templating';
 import { $ } from 'meteor/jquery';
+import { _ } from 'meteor/underscore';
 import { ReactiveVar } from 'meteor/reactive-var';
+import { Clubs } from '/imports/api/clubprofile/ClubProfileCollection';
 
 import './slideshow.html';
 
+let first = true;
+
 Template.Slideshow.onCreated(function onCreated() {
-  this.currentIndex = new ReactiveVar(0);
+  this.subscribe(Clubs.getPublicationName());
+  this.currentIndex = new ReactiveVar(12);
 });
 
 Template.Slideshow.helpers({
+  club() {
+    // clubs(name) name wil be aloha-nave
+    // replace - with space before find
+    const name = 'Chi Epsilon';
+    return Clubs.find({ name: new RegExp('^' + name + '$', 'i') });
+    // return Clubs.find({}, { sort: { name: 1 } });
+    // return Clubs.find({}, { sort: { name: 1 } });
+  },
+  firstIndex() {
+    if (first) {
+      first = false;
+      return true;
+    }
+    return false;
+  },
 });
 
 Template.Slideshow.events({

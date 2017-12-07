@@ -90,6 +90,10 @@ class ClubProfileCollection extends BaseCollection {
     const instagram = doc.instagram;
     return { name, leaders, bio, tags, pictures, email, facebook, instagram };
   }
+
+  toObject() {
+    return this.toObject();
+  }
 }
 
 /**

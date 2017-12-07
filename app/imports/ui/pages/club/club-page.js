@@ -19,7 +19,6 @@ Template.Club_Page.onCreated(function onCreated() {
 });
 
 Template.Club_Page.helpers({
-  /*
   successClass() {
     return Template.instance().messageFlags.get(displaySuccessMessage) ? 'success' : '';
   },
@@ -29,7 +28,13 @@ Template.Club_Page.helpers({
   errorClass() {
     return Template.instance().messageFlags.get(displayErrorMessages) ? 'error' : '';
   },
-  */
+  club() {
+    // clubs(name) name wil be aloha-nave
+    // replace - with space before find
+    const name = 'alpha gamma delta';
+    return Clubs.find({ name: new RegExp('^' + name + '$', 'i') });
+    // return Clubs.find({}, { sort: { name: 1 } });
+  },
 
   /*
   profile() {
@@ -71,7 +76,7 @@ Template.Club_Page.events({
         })
         .modal('show')
     ;
-  },
+  }, /*
   'submit .actions'(event, instance) {
     event.preventDefault();
     console.log('submit');
@@ -112,7 +117,6 @@ Template.Club_Page.events({
       instance.messageFlags.set(displaySuccessMessage, false);
       instance.messageFlags.set(displayErrorMessages, true);
     }
-
-  */
   },
+  */
 });

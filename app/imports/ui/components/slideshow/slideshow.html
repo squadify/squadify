@@ -6,16 +6,33 @@
       </button>
     </div>
     <div class="twelve wide slidebox column">
-      <img class="ui centered bordered myslide image" src="https://raw.githubusercontent.com/squadify/squadify/master/app/public/images/casanova.jpg">
-      <img class="ui centered bordered hidden myslide image" src="https://raw.githubusercontent.com/squadify/squadify/master/app/public/images/american_society_of_civil_engineers_logo.png">
-      <img class="ui centered bordered hidden myslide image" src="https://raw.githubusercontent.com/squadify/squadify/master/app/public/images/biagioni.jpg">
-      <img class="ui centered bordered hidden myslide image" src="https://raw.githubusercontent.com/squadify/squadify/master/app/public/images/alpha_gamma_delta_groupPic.jpg">
-      <img class="ui centered bordered hidden myslide image" src="https://raw.githubusercontent.com/squadify/squadify/master/app/public/images/hosa_logo.jpg">
+      {{#each clubb in club }}
+        {{#each picture in clubb.pictures }}
+           <li>{{ picture }}</li>
+          {{ #if firstIndex }}
+             <img class="ui centered bordered myslide image" src="{{ picture }}">
+          {{ else }}
+             <img class="ui centered bordered myslide hidden image" src="{{ picture }}">
+          {{ /if }}
+        {{ /each }}
+      {{ /each }}
     </div>
     <div class="two wide column right-button-div">
       <button class="ui right floated big icon next-to-right button">
         <i class="chevron right icon"></i>
       </button>
     </div>
+  </div>
+
+  <div class="eight wide column">
+    {{#each club in clubs }}
+     {{#each picture in club.pictures }}
+       <li>{{ picture }}</li>
+     {{ /each }}
+    {{/each}}
+
+    {{#each picture in restPictures }}
+       <li>{{ picture }}</li>
+    {{ /each }}
   </div>
 </template>
