@@ -3,12 +3,22 @@ import { Clubs } from '/imports/api/clubprofile/ClubProfileCollection';
 import { Tags } from '/imports/api/tags/InterestsCollection';
 import { _ } from 'meteor/underscore';
 import { ReactiveDict } from 'meteor/reactive-dict';
+import { FlowRouter } from 'meteor/kadira:flow-router';
 
 Template.List_Page.onCreated(function onCreated() {
   this.subscribe(Clubs.getPublicationName());
   this.subscribe(Tags.getPublicationName());
   this.state = new ReactiveDict();
-  this.state.set('tag', 'none');
+
+  const tags = FlowRouter.getParam('_id');
+  console.log(tags);
+  if (tags === undefined) {
+    this.state.set('tag', 'none');
+  } else {
+    this.state.set('tag', tags);
+  }
+  // See https://dweldon.silvrback.com/guards to understand '&&' in next line.
+
 });
 let clublist = Clubs.find({}, { sort: { name: 1 } });
 
