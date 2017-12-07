@@ -10,14 +10,14 @@ let first = true;
 
 Template.Slideshow.onCreated(function onCreated() {
   this.subscribe(Clubs.getPublicationName());
-  this.currentIndex = new ReactiveVar(12);
+  this.currentIndex = new ReactiveVar(0);
 });
 
 Template.Slideshow.helpers({
   club() {
     // clubs(name) name wil be aloha-nave
     // replace - with space before find
-    const name = 'Chi Epsilon';
+    const name = 'American Society of Civil Engineers';
     return Clubs.find({ name: new RegExp('^' + name + '$', 'i') });
     // return Clubs.find({}, { sort: { name: 1 } });
     // return Clubs.find({}, { sort: { name: 1 } });
@@ -39,6 +39,9 @@ Template.Slideshow.events({
     const box = document.getElementsByClassName('slidebox');
     const currentIndex = instance.currentIndex.get();
     const nextIndex = (currentIndex > 0) ? (currentIndex - 1) : slides.length - 1;
+    // console.log(nextIndex);
+    // console.log(slides);
+    // console.log(currentIndex);
     // console.log(nextIndex);
     $(box)
         .transition('fade left', '300ms', function () {

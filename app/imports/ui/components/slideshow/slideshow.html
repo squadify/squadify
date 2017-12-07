@@ -8,7 +8,6 @@
     <div class="twelve wide slidebox column">
       {{#each clubb in club }}
         {{#each picture in clubb.pictures }}
-           <li>{{ picture }}</li>
           {{ #if firstIndex }}
              <img class="ui centered bordered myslide image" src="{{ picture }}">
           {{ else }}
