@@ -13,6 +13,10 @@ Template.Slideshow.onCreated(function onCreated() {
   this.currentIndex = new ReactiveVar(0);
 });
 
+Template.Slideshow.onRendered(function () {
+  first = true;
+});
+
 Template.Slideshow.helpers({
   club() {
     // clubs(name) name wil be aloha-nave

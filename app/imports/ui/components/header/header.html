@@ -25,6 +25,9 @@
       {{#if currentUser}}
       <a class="item" href="/profile">PROFILE</a>
       {{/if}}
+      {{ #if authorized }}
+       <a class="item" href="/club_edit">Edit</a>
+      {{ /if }}
       <div class="right item">
         {{> Cas_Login }}
       </div>
