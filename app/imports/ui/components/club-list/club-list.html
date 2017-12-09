@@ -1,0 +1,8 @@
+<template name="Club_List">
+    <div class="header">
+      {{ club.name }}
+    </div>
+      {{#each tag in club.tags}}
+        <a>{{tag}}</a>
+      {{/each}}
+</template>

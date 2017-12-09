@@ -5,6 +5,7 @@ import '/imports/ui/components/user';
 import '/imports/ui/components/landing';
 import '/imports/ui/components/header';
 import '/imports/ui/components/footer';
+import '/imports/ui/components/club-list';
 import '/imports/ui/components/slideshow';
 import '/imports/ui/layouts/directory';
 import '/imports/ui/layouts/landing';

@@ -109,3 +109,10 @@ FlowRouter.route('/club_edit', {
     BlazeLayout.render('Club_Edit_Layout', { main: clubEditPageRoutName });
   },
 });
+
+FlowRouter.route('/list-page/:_id', {
+  name: 'List_Page',
+  action() {
+    BlazeLayout.render('List_Page', { main: 'List_Page' });
+  },
+});

@@ -8,16 +8,15 @@
             <div class="content menu">
               <h2 style="padding-top: 25px;" class="ui header centered">Index</h2>
               {{#each tag in tags}}
-                <a>{{tag.name}}</a>
+                <a class="item tag">{{tag.name}}</a>
               {{/each}}
             </div>
           </div>
         </div>
 
-
         <div class="eight wide column">
-          {{#each club in clubs }}
-            <li>{{ club.name }}</li>
+          {{#each club in clubs}}
+            <li class="active item">{{club.name}}</li>
           {{/each}}
         </div>
       </div>
