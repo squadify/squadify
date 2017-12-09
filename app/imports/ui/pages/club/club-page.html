@@ -2,46 +2,89 @@
 
   {{#if Template.subscriptionsReady}}
 
-    <div class="ui container">
-      <div class="ui sixteen wide grid">
-        <div class="sixteen wide centered row">
-          <h1 class="ui dividing header">UH Manoa ACM Club</h1>
-          <a href="/club_edit">[Edit]</a>
-        </div>
+  <div class="ui container">
+    <div class="ui sixteen wide grid">
+      <div class="sixteen wide centered row">
+        <h1 class="ui dividing header">{{ club.name }}</h1>
+        <a href="/club_edit">[Edit]</a>
+      </div>
 
-        {{> Slideshow }}
+      {{> Slideshow club=club}}
 
-        <div class="ui row">
-          <div class="ui stacked segment">
-            <p>Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vestibulum tortor quam, feugiat vitae, ultricies eget, tempor sit amet, ante. Donec eu libero sit amet quam egestas semper. Aenean ultricies mi vitae est. Mauris placerat eleifend leo.Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vestibulum tortor quam, feugiat vitae, ultricies eget, tempor sit amet, ante. Donec eu libero sit amet quam egestas semper. Aenean ultricies mi vitae est. Mauris placerat eleifend leo.Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vestibulum tortor quam, feugiat vitae, ultricies eget, tempor sit amet, ante. Donec eu libero sit amet quam egestas semper. Aenean ultricies mi vitae est. Mauris placerat eleifend leo.</p>
-          </div>
+      <div class="ui row">
+        <div class="ui stacked segment">
+           {{ #if club.bio }}
+              <p>{{ club.bio }}</p>
+           {{ /if }}
         </div>
+      </div>
 
-        <div class="ui row">
-          <div class="four wide column">
-            <i class="mail big icon"></i>
-            <a href=#>yong4@hawaii.edu</a>
-          </div>
-          <div class="four wide column">
-            <i class="facebook big square icon"></i>
-            <a href=#>yong4@hawaii.edu</a>
-          </div>
-          <div class="four wide column">
-            <i class="twitter big square icon"></i>
-            <a href=#>yong4@hawaii.edu</a>
-          </div>
-          <div class="four wide column">
-            <i class="instagram square big icon"></i>
-            <a href=#>yong4@hawaii.edu</a>
-          </div>
-        </div>
-
-        <div class="ui centered row">
-          <a href="/"><button class="ui huge green button" type="submit">Apply</button></a>
-        </div>
+      <div class="ui row">
+          {{ #if club.email }}
+            <div class="eight wide column">
+             <i class="mail big icon"></i>
+             <a href=#>{{ club.email }}</a>
+            </div>
+          {{ /if }}
+          {{ #if club.facebook }}
+            <div class="eight wide column">
+              <i class="facebook big square icon"></i>
+              <a href=#>{{ club.facebook }}</a>
+            </div>
+          {{ /if }}
+          {{ #if club.twitter }}
+            <div class="eight wide column">
+              <i class="twitter big square icon"></i>
+              <a href=#>{{ club.twitter }}</a>
+            </div>
+          {{ /if }}
+          {{ #if club.instagram }}
+            <div class="eight wide column">
+              <i class="instagram square big icon"></i>
+              <a href=#>{{ club.instagram }}</a>
+            </div>
+          {{ /if }}
 
       </div>
+      <!--
+      <div class="ui centered row">
+        <a>
+            {{ #if club.apply }}
+              <button class="ui huge green button">Apply</button>
+            {{ else }}
+              <button class="ui huge green disabled button">Apply</button>
+            {{ /if }}
+        </a>
+      </div>
+      -->
+
     </div>
+  </div>
+
+  <div class="ui modal">
+    <i class="close icon"></i>
+    <div class="header">
+      Application
+    </div>
+    <div class="content">
+      <form class="ui equal width form application-data-form {{ successClass }} {{ errorClass }}">
+        <div class="fields">
+          {{> Text_Form_Control label="Name" placeholder="Your Name" errorMessage=(fieldError
+          "name")}}
+          {{> Text_Form_Control label="Email" placeholder="Your Email" errorMessage=(fieldError
+          "email")}}
+        </div>
+        <div class="field">
+          {{> TextArea_Form_Control label="TextArea" placeholder=" " errorMessage=(fieldError
+          "text area")}}
+        </div>
+      </form>
+    </div>
+    <div class="actions">
+      <div class="ui deny button">Cancel</div>
+      <button class="ui approve button" type="submit">Submit</button>
+    </div>
+  </div>
 
   {{/if}}
 

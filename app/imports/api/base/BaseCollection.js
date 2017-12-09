@@ -246,6 +246,10 @@ class BaseCollection {
   restoreAll(dumpObjects) {
     _.each(dumpObjects, dumpObject => this.restoreOne(dumpObject));
   }
+
+  myToObject(cursor) {
+    return cursor.toObject();
+  }
 }
 
 /**
