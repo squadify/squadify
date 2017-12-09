@@ -6,11 +6,13 @@
       </button>
     </div>
     <div class="twelve wide slidebox column">
-      <img class="ui centered bordered myslide image" src="https://i.ytimg.com/vi/SfLV8hD7zX4/maxresdefault.jpg">
-      <img class="ui centered bordered hidden myslide image" src="http://cdn.akc.org/akcdoglovers/affenpischer094_thumb_2.jpg">
-      <img class="ui centered bordered hidden myslide image" src="http://cdn.akc.org/akcdoglovers/afghanThumb.jpg">
-      <img class="ui centered bordered hidden myslide image" src="http://cdn.akc.org/akcdoglovers/airedaleThumb.jpg">
-      <img class="ui centered bordered hidden myslide image" src="http://cdn.akc.org/akcdoglovers/Akita_thumb.jpg">
+        {{#each picture in club.pictures }}
+          {{ #if firstIndex }}
+             <img class="ui centered bordered myslide image" src="{{ picture }}">
+          {{ else }}
+             <img class="ui centered bordered myslide hidden image" src="{{ picture }}">
+          {{ /if }}
+        {{ /each }}
     </div>
     <div class="two wide column right-button-div">
       <button class="ui right floated big icon next-to-right button">

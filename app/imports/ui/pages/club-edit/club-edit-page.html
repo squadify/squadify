@@ -8,21 +8,7 @@
         <h1 class="ui dividing header">UH Manoa ACM Club</h1>
       </div>
 
-      <div class="ui middle aligned row">
-        <div class="two wide column left-button-div">
-          <button class="ui left floated big icon next-to-right button">
-            <i class="chevron left icon"></i>
-          </button>
-        </div>
-        <div class="twelve wide column">
-          <img class="ui big centered bordered dog image" src="https://i.ytimg.com/vi/SfLV8hD7zX4/maxresdefault.jpg">
-        </div>
-        <div class="two wide column right-button-div">
-          <button class="ui right floated big icon next-to-left button">
-            <i class="chevron right icon"></i>
-          </button>
-        </div>
-      </div>
+      {{> Slideshow club=club}}
 
       <div class="ui twelve wide centered column">
         <div class="ui form">
@@ -83,6 +69,7 @@
 
       <div class="ui centered row">
         <a href="/club"><button class="ui huge green button" type="submit">Submit</button></a>
+        <a href=""><button class="ui huge red hidden button" type="delete">Delete</button></a>
       </div>
 
     </div>
