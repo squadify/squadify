@@ -30,4 +30,9 @@ Template.page_header.helpers({
 });
 
 Template.page_header.events({
+  'click .ui.dropdown.item': function () {
+    $('.ui.dropdown.item').dropdown('refresh');
+    $('.ui.dropdown.item').dropdown('clear');
+    $('.ui.dropdown .text').html('CLUB EDIT');
+  }
 });
