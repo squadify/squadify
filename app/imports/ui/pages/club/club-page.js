@@ -1,53 +1,24 @@
 import { Template } from 'meteor/templating';
-import { ReactiveDict } from 'meteor/reactive-dict';
 import { FlowRouter } from 'meteor/kadira:flow-router';
 import { _ } from 'meteor/underscore';
 import { $ } from 'meteor/jquery';
 import { Clubs } from '/imports/api/clubprofile/ClubProfileCollection';
 
-const displaySuccessMessage = 'displaySuccessMessage';
-const displayErrorMessages = 'displayErrorMessages';
-
 let id;
 
 Template.Club_Page.onCreated(function onCreated() {
-  // this.subscribe(Interests.getPublicationName());
-  // this.subscribe(Profiles.getPublicationName());
   this.subscribe(Clubs.getPublicationName());
   id = FlowRouter.getParam('_id');
-  // this.context = Profiles.getSchema().namedContext('Profile_Page');
 });
 
 Template.Club_Page.helpers({
-  successClass() {
-    return Template.instance().messageFlags.get(displaySuccessMessage) ? 'success' : '';
-  },
-  displaySuccessMessage() {
-    return Template.instance().messageFlags.get(displaySuccessMessage);
-  },
-  errorClass() {
-    return Template.instance().messageFlags.get(displayErrorMessages) ? 'error' : '';
-  },
   club() {
-    // clubs(name) name wil be aloha-nave
-    // replace - with space before find
-    return Clubs.find({ _id: id });
-    // return Clubs.find({}, { sort: { name: 1 } });
+    const club = _.find(Clubs.findAll(), function(clubb){
+      return clubb._id === id;
+    });
+    return club;
   },
 
-  /*
-  profile() {
-    return Profiles.findDoc(FlowRouter.getParam('username'));
-  },
-  interests() {
-    const profile = Profiles.findDoc(FlowRouter.getParam('username'));
-    const selectedInterests = profile.interests;
-    return profile && _.map(Interests.findAll(),
-        function makeInterestObject(interest) {
-          return { label: interest.name, selected: _.contains(selectedInterests, interest.name) };
-        });
-  },
-  */
 });
 
 Template.Club_Page.events({

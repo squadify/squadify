@@ -18,14 +18,6 @@ Template.Slideshow.onRendered(function () {
 });
 
 Template.Slideshow.helpers({
-  club() {
-    // clubs(name) name wil be aloha-nave
-    // replace - with space before find
-    const name = 'American Society of Civil Engineers';
-    return Clubs.find({ name: new RegExp('^' + name + '$', 'i') });
-    // return Clubs.find({}, { sort: { name: 1 } });
-    // return Clubs.find({}, { sort: { name: 1 } });
-  },
   firstIndex() {
     if (first) {
       first = false;
