@@ -12,10 +12,9 @@ Template.List_Page.onCreated(function onCreated() {
 
   const tags = FlowRouter.getParam('_id');
   console.log(tags);
-  if (tags === undefined) {
-    this.state.set('tag', 'none');
-  } else {
-    this.state.set('tag', tags);
+  this.state.set('tag', 'none');
+  if (tags !== undefined) {
+    this.state.set('tag', tags.toString());
   }
   // See https://dweldon.silvrback.com/guards to understand '&&' in next line.
 
@@ -48,6 +47,7 @@ Template.List_Page.helpers({
 
 Template.List_Page.events({
   'click .tag'(event, instance) {
+    console.log(instance);
     instance.state.set('tag', $(event.target).text());
   },
 });
