@@ -19,9 +19,9 @@
   </div>
   <div style="margin: 0px; border-radius: 0px;" class="ui borderless inverted menu">
     <div class="ui container">
-      <a class="item" href="/"><h1>HOME</h1></a>
-      <a class="item" href="/search">SEARCH</a>
-      <a class="item" href="/list">LISTS</a>
+      <a class="item" onclick="window.location.href='/'"><h1>HOME</h1></a>
+      <a class="item" onclick="window.location.href='/search'">SEARCH</a>
+      <a class="item" onclick="window.location.href='/list'" >LISTS</a>
       {{#if currentUser}}
       <a class="item" href="/club-edit">CLUB PROFILE</a>
       {{/if}}
