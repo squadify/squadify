@@ -8,13 +8,13 @@ import { Clubs } from '/imports/api/clubprofile/ClubProfileCollection';
 const displaySuccessMessage = 'displaySuccessMessage';
 const displayErrorMessages = 'displayErrorMessages';
 
+let id;
+
 Template.Club_Page.onCreated(function onCreated() {
   // this.subscribe(Interests.getPublicationName());
   // this.subscribe(Profiles.getPublicationName());
   this.subscribe(Clubs.getPublicationName());
-  this.messageFlags = new ReactiveDict();
-  this.messageFlags.set(displaySuccessMessage, false);
-  this.messageFlags.set(displayErrorMessages, false);
+  id = FlowRouter.getParam('_id');
   // this.context = Profiles.getSchema().namedContext('Profile_Page');
 });
 
@@ -31,8 +31,7 @@ Template.Club_Page.helpers({
   club() {
     // clubs(name) name wil be aloha-nave
     // replace - with space before find
-    const name = 'alpha gamma delta';
-    return Clubs.find({ name: new RegExp('^' + name + '$', 'i') });
+    return Clubs.find({ _id: id });
     // return Clubs.find({}, { sort: { name: 1 } });
   },
 

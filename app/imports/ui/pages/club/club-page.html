@@ -13,53 +13,47 @@
 
       <div class="ui row">
         <div class="ui stacked segment">
-          {{#each clubb in club }}
-           {{ #if clubb.bio }}
-              <p>{{ clubb.bio }}</p>
+           {{ #if club.bio }}
+              <p>{{ club.bio }}</p>
            {{ /if }}
-          {{ /each }}
         </div>
       </div>
 
       <div class="ui row">
-        {{#each clubb in club }}
-          {{ #if clubb.email }}
+          {{ #if club.email }}
             <div class="eight wide column">
              <i class="mail big icon"></i>
-             <a href=#>{{ clubb.email }}</a>
+             <a href=#>{{ club.email }}</a>
             </div>
           {{ /if }}
-          {{ #if clubb.facebook }}
+          {{ #if club.facebook }}
             <div class="eight wide column">
               <i class="facebook big square icon"></i>
-              <a href=#>{{ clubb.facebook }}</a>
+              <a href=#>{{ club.facebook }}</a>
             </div>
           {{ /if }}
-          {{ #if clubb.twitter }}
+          {{ #if club.twitter }}
             <div class="eight wide column">
               <i class="twitter big square icon"></i>
-              <a href=#>{{ clubb.twitter }}</a>
+              <a href=#>{{ club.twitter }}</a>
             </div>
           {{ /if }}
-          {{ #if clubb.instagram }}
+          {{ #if club.instagram }}
             <div class="eight wide column">
               <i class="instagram square big icon"></i>
-              <a href=#>{{ clubb.instagram }}</a>
+              <a href=#>{{ club.instagram }}</a>
             </div>
           {{ /if }}
-        {{ /each }}
 
       </div>
 
       <div class="ui centered row">
         <a>
-          {{#each clubb in club }}
-            {{ #if clubb.apply }}
+            {{ #if club.apply }}
               <button class="ui huge green button">Apply</button>
             {{ else }}
               <button class="ui huge green disabled button">Apply</button>
             {{ /if }}
-          {{ /each }}
         </a>
       </div>
 

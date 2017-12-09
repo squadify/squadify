@@ -23,11 +23,8 @@
       <a class="item" href="/search">SEARCH</a>
       <a class="item" href="/list">LISTS</a>
       {{#if currentUser}}
-      <a class="item" href="/profile">PROFILE</a>
+      <a class="item" href="/club-edit">CLUB PROFILE</a>
       {{/if}}
-      {{ #if authorized }}
-       <a class="item" href="/club_edit">Edit</a>
-      {{ /if }}
       <div class="right item">
         {{> Cas_Login }}
       </div>
