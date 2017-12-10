@@ -23,6 +23,20 @@
       <a class="item" onclick="window.location.href='/search'">SEARCH</a>
       <a class="item" onclick="window.location.href='/list'">LISTS</a>
 
+      {{#if Template.subscriptionsReady}}
+      {{#if list}}
+      <a class="ui dropdown item">
+        <span class="text">CLUB EDIT</span>
+        <div class="menu">
+          {{#each club in clublist}}
+          <div class="item">
+            <a style="color: black" href="{{ pathFor 'Club_Edit_Page' _id=club._id }}">{{ club.name }}</a>
+          </div>
+          {{/each}}
+        </div>
+      </a>
+      {{/if}}
+      {{/if}}
       <div class="right item">
         {{> Cas_Login }}
       </div>

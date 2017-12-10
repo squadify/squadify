@@ -5,37 +5,33 @@
     <div class="ui form">
       <div class="field">
         <label>Name</label>
-        <input type="text" placeholder="Club Name">
-      </div>
-      <div class="field">
-        <label>Type</label>
-        <div class="ui selection dropdown">
-          <input type="hidden" name="type">
-          <i class="dropdown icon"></i>
-          <div class="default text">Type</div>
-          <div class="menu">
-            <div class="item" data-value="male" data-text="Male">
-              <i class="male icon"></i>
-              Male
-            </div>
-            <div class="item" data-value="female" data-text="Female">
-              <i class="female icon"></i>
-              Female
-            </div>
-          </div>
-        </div>
+        <input class="clubname" type="text" placeholder="Club Name">
       </div>
       <div class="field">
         <label>Tags</label>
-        <select multiple class="ui dropdown">
+        <select class="ui tag dropdown">
           <option value="">Select Tag</option>
-          <option value="ACM">ACM</option>
-          <option value="Sports">Sports</option>
-          <option value="Leisure">Leisure</option>
+          <option value="null">All</option>
+          {{ #each tag in tags }}
+          <option value={{ tag.name }}>{{ tag.name }}</option>
+          {{ /each}}
         </select>
       </div>
     </div>
+    <button class="ui primary search button">
+      SEARCH
+    </button>
   </div>
+  <div class="ui container">
+    <div class="eight wide column">
+      {{#each club in clubs}}
+      <li>
+        <a href="{{ pathFor 'Club_Page' _id=club._id }}" class="active item">{{club.name}}</a>
+      </li>
+      {{/each}}
+    </div>
+  </div>
+
   {{> page_footer }}
 
   <script>
