@@ -102,14 +102,6 @@ FlowRouter.route('/club', {
 
 /*                        CLUB EDIT ROUTE                       */
 
-export const clubEditPageRoutName = 'Club_Edit_Page';
-FlowRouter.route('/club_edit', {
-  name: clubEditPageRoutName,
-  action() {
-    BlazeLayout.render('Club_Edit_Layout', { main: clubEditPageRoutName });
-  },
-});
-
 FlowRouter.route('/list-page/:_id', {
   name: 'List_Page',
   action() {
@@ -121,5 +113,12 @@ FlowRouter.route('/club-page/:_id', {
   name: 'Club_Page',
   action() {
     BlazeLayout.render('Club_Page', { main: 'Club_Page' });
+  },
+});
+
+FlowRouter.route('/club-edit/:_id', {
+  name: 'Club_Edit_Page',
+  action() {
+    BlazeLayout.render('Club_Edit_Layout', { main: 'Club_Edit_Page' });
   },
 });

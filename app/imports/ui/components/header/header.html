@@ -33,7 +33,7 @@
         <div class="menu">
           {{#each club in clublist}}
           <div class="item">
-            <a style="color: black" href="{{ pathFor 'Club_Page' _id=club._id }}">{{ club.name }}</a>
+            <a style="color: black" href="{{ pathFor 'Club_Edit_Page' _id=club._id }}">{{ club.name }}</a>
           </div>
           {{/each}}
         </div>

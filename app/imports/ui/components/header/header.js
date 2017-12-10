@@ -34,5 +34,10 @@ Template.page_header.events({
     $('.ui.dropdown.item').dropdown('refresh');
     $('.ui.dropdown.item').dropdown('clear');
     $('.ui.dropdown .text').html('CLUB EDIT');
+  },
+
+  'keypress .prompt': function (event, instance) {
+    console.log(instance);
+    console.log(event);
   }
 });
