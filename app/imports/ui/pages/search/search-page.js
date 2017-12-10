@@ -37,11 +37,13 @@ Template.Search_Page.helpers({
       tag = 'null';
     }
     if (param !== undefined || tag === 'null') {
-      param = undefined;
+      console.log(name);
+      console.log(tag);
       clublist = _.filter(clublist, function (club) {
-        return (_.contains(club.tags, tag) || ((club.name).toLowerCase()).includes(name.toLowerCase()));
+        return (_.some(club.tags, function(tagg){return tagg.toLowerCase().includes(tag.toLowerCase());}) || ((club.name).toLowerCase()).includes(name.toLowerCase()));
       });
     } else {
+      console.log("Here");
       clublist = _.filter(clublist, function (club) {
         return (_.contains(club.tags, tag) && ((club.name).toLowerCase()).includes(name.toLowerCase()));
       });
@@ -59,5 +61,6 @@ Template.Search_Page.events({
     const instance = Template.instance();
     instance.state.set('name', $('.clubname').val());
     instance.state.set('tag', $('.tag.dropdown').dropdown('get value'));
+    param = undefined;
   }
 });
