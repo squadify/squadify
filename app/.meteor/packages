@@ -50,3 +50,5 @@ insecure@1.0.7
 
 # Tests
 meteortesting:mocha
+cfs:standard-packages
+cfs:filesystem

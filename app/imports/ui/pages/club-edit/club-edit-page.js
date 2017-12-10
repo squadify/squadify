@@ -4,6 +4,9 @@ import { _ } from 'meteor/underscore';
 import { FlowRouter } from 'meteor/kadira:flow-router';
 import { Clubs } from '/imports/api/clubprofile/ClubProfileCollection';
 
+Images = new FS.Collection("images", {
+  stores: [new FS.Store.FileSystem("images", {path: "~/uploads"})]
+});
 let id;
 
 Template.Club_Edit_Page.onCreated(function onCreated() {
