@@ -21,14 +21,6 @@ FlowRouter.route('/list', {
   },
 });
 
-export const searchPageRouteName = 'Search_Page';
-FlowRouter.route('/search', {
-  name: searchPageRouteName,
-  action() {
-    BlazeLayout.render('Search_Page', { main: searchPageRouteName });
-  },
-});
-
 export const profilePageRouteName = 'Profile_Page';
 FlowRouter.route('/profile', {
   name: profilePageRouteName,
@@ -120,5 +112,19 @@ FlowRouter.route('/club-edit/:_id', {
   name: 'Club_Edit_Page',
   action() {
     BlazeLayout.render('Club_Edit_Layout', { main: 'Club_Edit_Page' });
+  },
+});
+
+FlowRouter.route('/search/', {
+  name: 'Search_Page',
+  action() {
+    BlazeLayout.render('Search_Page', { main: 'Search_Page' });
+  },
+});
+
+FlowRouter.route('/search/:parameters', {
+  name: 'Search_Page',
+  action() {
+    BlazeLayout.render('Search_Page', { main: 'Search_Page' });
   },
 });
