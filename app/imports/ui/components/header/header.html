@@ -1,4 +1,8 @@
 <template name="page_header">
+  <script>
+    $('.ui.dropdown.item').dropdown('toggle');
+  </script>
+
   <div class="landing-section-1">
     <div class="ui grid">
       <div class="row">
@@ -21,13 +25,26 @@
     <div class="ui container">
       <a class="item" onclick="window.location.href='/'"><h1>HOME</h1></a>
       <a class="item" onclick="window.location.href='/search'">SEARCH</a>
-      <a class="item" onclick="window.location.href='/list'" >LISTS</a>
-      {{#if currentUser}}
-      <a class="item" href="/club-edit">CLUB PROFILE</a>
+      <a class="item" onclick="window.location.href='/list'">LISTS</a>
+      {{#if Template.subscriptionsReady}}
+      {{#if list}}
+      <a class="ui dropdown item">
+        <span class="text">CLUB EDIT</span>
+        <div class="menu">
+          {{#each club in clublist}}
+          <div class="item">
+            <a style="color: black" href="{{ pathFor 'Club_Page' _id=club._id }}">{{ club.name }}</a>
+          </div>
+          {{/each}}
+        </div>
+      </a>
+      {{/if}}
       {{/if}}
       <div class="right item">
         {{> Cas_Login }}
       </div>
     </div>
   </div>
+
+
 </template>
