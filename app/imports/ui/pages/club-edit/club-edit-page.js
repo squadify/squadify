@@ -4,9 +4,6 @@ import { _ } from 'meteor/underscore';
 import { FlowRouter } from 'meteor/kadira:flow-router';
 import { Clubs } from '/imports/api/clubprofile/ClubProfileCollection';
 
-Images = new FS.Collection("images", {
-  stores: [new FS.Store.FileSystem("images", {path: "~/uploads"})]
-});
 let id;
 
 Template.Club_Edit_Page.onCreated(function onCreated() {
@@ -18,7 +15,7 @@ Template.Club_Edit_Page.helpers({
   club() {
     // clubs(name) name wil be aloha-nave
     // replace - with space before find'
-    const club = _.find(Clubs.findAll(), function(clubb) {
+    const club = _.find(Clubs.findAll(), function (clubb) {
       return clubb._id === id;
     });
     return club;
@@ -36,7 +33,18 @@ Template.Club_Edit_Page.events({
     $('.dog.image').transition('fade left');
     $('.dog.image').transition('fade right');
   },
-  'click .huge.green.button': function () {
-    console.log('submit');
+  'click .red.buttonnnnnn': function () {
+    console.log('red button');
+    console.log(document.getElementById('file').files);
+    // console.log(Files);
   },
-});
+  'change .red.button': function() {
+    let files = document.getElementById('file').files;
+    for (let i = 0, ln = files.length; i < ln; i++) {
+      Images.insert(files[i], function (err, fileObj) {
+        // Inserted new doc with ID fileObj._id, and kicked off the data upload using HTTP
+      });
+    }
+  },
+})
+;
