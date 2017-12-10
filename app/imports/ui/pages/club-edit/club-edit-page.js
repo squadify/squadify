@@ -3,6 +3,8 @@ import { $ } from 'meteor/jquery';
 import { _ } from 'meteor/underscore';
 import { FlowRouter } from 'meteor/kadira:flow-router';
 import { Clubs } from '/imports/api/clubprofile/ClubProfileCollection';
+import { FS } from 'meteor/cfs:base-package';
+import '/imports/startup/both';
 
 let id;
 
@@ -38,11 +40,13 @@ Template.Club_Edit_Page.events({
     console.log(document.getElementById('file').files);
     // console.log(Files);
   },
-  'change .red.button': function() {
-    let files = document.getElementById('file').files;
+  'click .red.button': function () {
+    const files = document.getElementById('file').files;
+    console.log(files);
     for (let i = 0, ln = files.length; i < ln; i++) {
       Images.insert(files[i], function (err, fileObj) {
         // Inserted new doc with ID fileObj._id, and kicked off the data upload using HTTP
+        console.log(i);
       });
     }
   },

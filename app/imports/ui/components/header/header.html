@@ -22,47 +22,7 @@
       <a class="item" onclick="window.location.href='/'"><h1>HOME</h1></a>
       <a class="item" onclick="window.location.href='/search'">SEARCH</a>
       <a class="item" onclick="window.location.href='/list'">LISTS</a>
-      <div class="ui compact menu" style="color: black;">
-        <div class="ui simple dropdown item" style="color: black;">
-          Dropdown
-          <i class="dropdown icon"></i>
-          <div class="inverted menu">
-            <div class="item">Choice 1</div>
-            <div class="item">Choice 2</div>
-            <div class="item">Choice 3</div>
-          </div>
-        </div>
-      </div>
-     <!-- {{#if Template.subscriptionsReady}}
-      {{#if list}}
-      <div class="ui compact menu">
-        <div class="ui simple dropdown item">
-          Dropdown
-          <i class="dropdown icon"></i>
-          <div class="menu">
-            {{#each club in clublist}}
-            <a class="item" style="color: black" href="{{ pathFor 'Club_Page' _id=club._id }}">{{ club.name }}</a>
-            {{/each}}
-          </div>
-        </div>
-      </div>
-      {{/if}}
-      {{/if}}
-      -->
-      <!--
-      <a class="ui dropdown item">
-        <span class="text">CLUB EDIT</span>
-        <div class="menu">
-          {{#each club in clublist}}
-          <div class="item">
-            <a style="color: black" href="{{ pathFor 'Club_Page' _id=club._id }}">{{ club.name }}</a>
-          </div>
-          {{/each}}
-        </div>
-      </a>
-      {{/if}}
-      {{/if}}
-      -->
+
       <div class="right item">
         {{> Cas_Login }}
       </div>

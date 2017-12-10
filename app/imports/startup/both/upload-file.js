@@ -8,6 +8,7 @@ const Images = new FS.Collection('images', {
 Images.allow({
   'insert': function () {
     // add custom authentication code here
+    console.log('works');
     return true;
   },
 });
