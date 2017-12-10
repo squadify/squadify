@@ -4,3 +4,4 @@ import '/imports/api/profile';
 import '/imports/api/interest';
 import '/imports/api/clubprofile';
 import '/imports/api/tags';
+import '/imports/api/admin';
