@@ -5,7 +5,7 @@
   <div class="ui container">
     <div class="ui sixteen wide grid">
       <div class="sixteen wide centered row">
-        <h1 class="ui dividing header">UH Manoa ACM Club</h1>
+        <h1 class="ui dividing header">{{ club.name }}</h1>
       </div>
 
       {{> Slideshow club=club}}
@@ -14,7 +14,7 @@
         <div class="ui form">
           <div class="field">
             <label>Summary</label>
-            <textarea rows="7"></textarea>
+            <textarea class="mytext" rows="7"></textarea>
           </div>
         </div>
       </div>
@@ -25,11 +25,11 @@
           <div class="inline fields">
             <div class="eight wide field">
               <i class="mail big icon" type="email"></i>
-              <input type="text" placeholder="Email">
+              <input class="email" type="text" placeholder="Email">
             </div>
             <div class="eight wide field">
               <i class="facebook big square icon" type="facebook"></i>
-              <input type="text" placeholder="Facebook">
+              <input class="facebook" type="text" placeholder="Facebook">
             </div>
           </div>
         </div>
@@ -38,11 +38,11 @@
           <div class="inline fields">
             <div class="eight wide field">
               <i class="twitter big square icon" type="twitter"></i>
-              <input type="text" placeholder="Twitter">
+              <input class="twitter"type="text" placeholder="Twitter">
             </div>
             <div class="eight wide field">
               <i class="instagram square big icon" type="instagram"></i>
-              <input type="text" placeholder="Instagram">
+              <input class="instagram" type="text" placeholder="Instagram">
             </div>
           </div>
         </div>
@@ -68,7 +68,7 @@
       </div>
 
       <div class="ui centered row">
-        <a href="/club"><button class="ui huge green button" type="submit">Submit</button></a>
+        <a href=""><button class="ui huge green button" type="submit">Submit</button></a>
         <a href=""><button class="ui huge red hidden button" type="delete">Delete</button></a>
       </div>
 
