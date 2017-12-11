@@ -11,10 +11,13 @@ const brain = require('brain');
 const tfidf = mimir.tfidf;
 const net = new brain.NeuralNetwork();
 
+
+const amazon = 'https://www.amazon.com/'
+
 var ANN_Classes = {
       COMERCIAL: 0,
       SOCIAL: 1,
-      INFORMATIONAL: 2
+      INFORMATIONAL: 2,
     },
     classes_array = Object.keys(ANN_Classes);
 
@@ -22,20 +25,20 @@ function tfidfRun(textlist) {
   console.log(textlist);
   textlist.forEach(function (t, index) {
     console.log('Most important words in document', index + 1);
-    var scores = {};
+    let scores = {};
     t.split(' ').forEach(function (word) {
       scores[word] = tfidf(word, t, textlist);
     });
     scores = Object.keys(scores).map(function (word) {
       return {
         word: word,
-        score: scores[word]
-      }
+        score: scores[word],
+      };
     });
     scores.sort(function (a, b) {
       return a.score < b.score ? 1 : -1;
     });
-    //console.log(scores.splice(0, 3));
+    console.log(scores.splice(0, 3));
     return scores;
   });
 }
@@ -74,8 +77,9 @@ Template.Club_Page.events({
     .map( (word)=> {
       return natural.PorterStemmer.stem(word);
      })
-    .join(' ');
-    //console.log(textWithoutStopwords);
+    .join(' ').trim();
+    console.log(textWithoutStopwords);
+
     let input = tfidfRun([textWithoutStopwords]);
     let output = classes_array.SOCIAL;
 
