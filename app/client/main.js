@@ -28,4 +28,5 @@ import '/imports/api/interest';
 import '/imports/api/clubprofile';
 import '/imports/api/tags';
 import '/imports/api/savefile/client';
+import '/imports/api/admin';
 

@@ -6,3 +6,4 @@ import '/imports/api/interest';
 import '/imports/api/clubprofile';
 import '/imports/api/tags';
 import '/imports/api/savefile/server';
+import '/imports/api/admin';
