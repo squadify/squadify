@@ -18,6 +18,9 @@
           {{#each club in clubs}}
             <li class="active item">
               <a href="{{ pathFor 'Club_Page' _id=club._id }}" class="active item">{{club.name}}</a>
+              {{#if admin}}
+              <a href="{{ pathFor 'Club_Edit_Page' _id=club._id }}">Edit</a>
+              {{/if}}
             </li>
           {{/each}}
         </div>

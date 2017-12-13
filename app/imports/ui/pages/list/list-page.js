@@ -4,6 +4,7 @@ import { Tags } from '/imports/api/tags/InterestsCollection';
 import { _ } from 'meteor/underscore';
 import { ReactiveDict } from 'meteor/reactive-dict';
 import { FlowRouter } from 'meteor/kadira:flow-router';
+import { Meteor } from 'meteor/meteor';
 
 Template.List_Page.onCreated(function onCreated() {
   this.subscribe(Clubs.getPublicationName());
@@ -43,6 +44,16 @@ Template.List_Page.helpers({
   tags() {
     return Tags.find({}, { sort: { name: 1 } });
   },
+  admin() {
+    if (Meteor.users.find().fetch().length > 0) {
+      let admin = ["herm8888", "bryantsa", "yong4"];
+      let user = Meteor.users.find().fetch()[0].profile.name;
+      if(_.contains(admin, user)) {
+        return true;
+      }
+    }
+    return false;
+  }
 });
 
 Template.List_Page.events({
