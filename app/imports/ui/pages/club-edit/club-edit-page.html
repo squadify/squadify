@@ -19,7 +19,7 @@
         </div>
       </div>
 
-      <div class="ui twelve wide centered column">
+        {{> Slideshow club=club}}
 
         <div class="ui form">
           <div class="inline fields">
@@ -45,13 +45,12 @@
               <input class="iinstagram" type="text" placeholder="Instagram" value="{{ clubFeild 'instagram' }}">
             </div>
           </div>
+
         </div>
 
-      </div>
+        <div class="ui twelve wide centered column">
 
-      <div class="ui twelve wide centered column">
-
-        <div class="ui twelve wide row">
+          <div class="ui twelve wide row">
 
           <div class="ui four wide left aligned row">
             <label for="file" class="ui icon button">
@@ -59,22 +58,29 @@
               Open File</label>
             <input class="myfile" id="file" type="file" multiple style="display:none">
 
-            <div class="ui disabled input">
-              <input style="width: 570px;" type="text" placeholder="C:/...">
+              <div class="ui disabled input">
+                <input style="width: 570px;" type="text" placeholder="C:/...">
+              </div>
             </div>
-          </div>
 
+          </div>
         </div>
-      </div>
+
+        <div class="ui centered row">
+          <a href="/club">
+            <button class="ui huge green button" type="submit">Submit</button>
+          </a>
+          <a href="">
+            <button class="ui huge red hidden button" type="delete">Delete</button>
+          </a>
+        </div>
 
       <div class="ui centered row">
         <a href=""><button class="ui huge green button" type="submit">Submit</button></a>
         <a href=""><button class="ui huge red hidden button" type="delete">Delete</button></a>
       </div>
-
     </div>
   </div>
-
   {{/if}}
 
 </template>
