@@ -1,8 +1,4 @@
 <template name="page_header">
-  <script>
-    $('.ui.dropdown.item').dropdown('toggle');
-  </script>
-
   <div class="landing-section-1">
     <div class="ui grid">
       <div class="row">
@@ -26,6 +22,7 @@
       <a class="item" onclick="window.location.href='/'"><h1>HOME</h1></a>
       <a class="item" onclick="window.location.href='/search'">SEARCH</a>
       <a class="item" onclick="window.location.href='/list'">LISTS</a>
+
       {{#if Template.subscriptionsReady}}
         {{#if list}}
           <a class="ui dropdown item">
@@ -45,6 +42,4 @@
       </div>
     </div>
   </div>
-
-
 </template>
