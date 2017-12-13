@@ -10,18 +10,7 @@
 
       {{> Slideshow club=club}}
 
-      <div class="ui twelve wide centered column">
-        <div class="ui form">
-          <div class="field">
-            <label>Summary</label>
-            <textarea class="itext" rows="7">{{ clubFeild 'bio' }}</textarea>
-          </div>
-        </div>
-      </div>
-
-        {{> Slideshow club=club}}
-
-        <div class="ui form">
+        <div class="ui centered form">
           <div class="inline fields">
             <div class="eight wide field">
               <i class="mail big icon" type="email"></i>
@@ -32,9 +21,6 @@
               <input class="ifacebook" type="text" placeholder="Facebook" value="{{ clubFeild 'facebook' }}">
             </div>
           </div>
-        </div>
-
-        <div class="ui form">
           <div class="inline fields">
             <div class="eight wide field">
               <i class="twitter big square icon" type="twitter"></i>
@@ -45,35 +31,21 @@
               <input class="iinstagram" type="text" placeholder="Instagram" value="{{ clubFeild 'instagram' }}">
             </div>
           </div>
-
         </div>
 
-        <div class="ui twelve wide centered column">
-
-          <div class="ui twelve wide row">
-
+      <div class="ui twelve wide centered column">
+        <div class="ui twelve wide row">
           <div class="ui four wide left aligned row">
             <label for="file" class="ui icon button">
               <i class="file icon"></i>
               Open File</label>
             <input class="myfile" id="file" type="file" multiple style="display:none">
-
-              <div class="ui disabled input">
-                <input style="width: 570px;" type="text" placeholder="C:/...">
-              </div>
+            <div class="ui disabled input">
+              <input style="width: 570px;" type="text" placeholder="C:/...">
             </div>
-
           </div>
         </div>
-
-        <div class="ui centered row">
-          <a href="/club">
-            <button class="ui huge green button" type="submit">Submit</button>
-          </a>
-          <a href="">
-            <button class="ui huge red hidden button" type="delete">Delete</button>
-          </a>
-        </div>
+      </div>
 
       <div class="ui centered row">
         <a href=""><button class="ui huge green button" type="submit">Submit</button></a>
