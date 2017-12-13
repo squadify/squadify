@@ -6,6 +6,7 @@ import { ReactiveDict } from 'meteor/reactive-dict';
 import { FlowRouter } from 'meteor/kadira:flow-router';
 
 let param;
+let result = false;
 
 Template.Search_Page.onCreated(function onCreated() {
   this.subscribe(Clubs.getPublicationName());
@@ -33,17 +34,16 @@ Template.Search_Page.helpers({
     const instance = Template.instance();
     let tag = instance.state.get('tag');
     let name = instance.state.get('name');
-    if(!tag) {
+    if (!tag) {
       tag = 'null';
     }
     if (param !== undefined || tag === 'null') {
-      console.log(name);
-      console.log(tag);
       clublist = _.filter(clublist, function (club) {
-        return (_.some(club.tags, function(tagg){return tagg.toLowerCase().includes(tag.toLowerCase());}) || ((club.name).toLowerCase()).includes(name.toLowerCase()));
+        return (_.some(club.tags, function (tagg) {
+          return tagg.toLowerCase().includes(tag.toLowerCase());
+        }) || ((club.name).toLowerCase()).includes(name.toLowerCase()));
       });
     } else {
-      console.log("Here");
       clublist = _.filter(clublist, function (club) {
         return (_.contains(club.tags, tag) && ((club.name).toLowerCase()).includes(name.toLowerCase()));
       });
@@ -53,11 +53,12 @@ Template.Search_Page.helpers({
 
   tags() {
     return Tags.find({}, { sort: { name: 1 } });
-  }
+  },
 });
 
 Template.Search_Page.events({
   'click .search.button'() {
+    result = true;
     const instance = Template.instance();
     instance.state.set('name', $('.clubname').val());
     instance.state.set('tag', $('.tag.dropdown').dropdown('get value'));
