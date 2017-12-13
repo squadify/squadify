@@ -47,8 +47,8 @@ Template.List_Page.helpers({
 
 Template.List_Page.events({
   'click .tag'(event, instance) {
-    console.log(instance);
     instance.state.set('tag', $(event.target).text());
+    $('#selectedTag').text($(event.target).text());
   },
 });
 
