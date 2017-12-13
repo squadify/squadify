@@ -8,13 +8,16 @@ import SimpleSchema from 'simpl-schema';
 
 const ClubSchema = new SimpleSchema({
   // Remainder are optional
+  name: { type: String, optional: true },
+  leaders: { type: Array, optional: true },
+  'leaders.$': { type: String },
   bio: { type: String, optional: true },
   pictures: { type: Array, optional: true },
   'pictures.$': { type: SimpleSchema.RegEx.Url },
   email: { type: SimpleSchema.RegEx.Url, optional: true },
   facebook: { type: SimpleSchema.RegEx.Url, optional: true },
-  instagram: { type: SimpleSchema.RegEx.Url, optional: true },
   twitter: { type: SimpleSchema.RegEx.Url, optional: true },
+  instagram: { type: SimpleSchema.RegEx.Url, optional: true },
 });
 
 let id;
@@ -47,13 +50,14 @@ Template.Club_Edit_Page.helpers({
 Template.Club_Edit_Page.events({
   'click .green.button'(event, instance) {
     event.preventDefault();
-    console.log('green button');
+    const name = $('.iname').val();
+    const leaders = $('.ileaders').val().split(',');
     const bio = $('.itext').val();
     const pictures = ["http://shrmuhm.com/wp-content/uploads/2012/07/TheSHRMAloha_Logo-300x300.jpg", "/images/vietnamese_student_organization_officers.jpg"];
     const email = $('.iemail').val();
     const facebook = $('.ifacebook').val();
-    const instagram = $('.iinstagram').val();
     const twitter = $('.itwitter').val();
+    const instagram = $('.iinstagram').val();
 
     console.log(bio);
     console.log(email);
@@ -62,7 +66,7 @@ Template.Club_Edit_Page.events({
     console.log(instagram);
     console.log(instance);
     console.log(instance.context);
-    const newClubData = { bio, pictures, email, facebook, instagram, twitter };
+    const newClubData = { name, leaders, bio, pictures, email, facebook, twitter, instagram };
     // Clear out any old validation errors.
     //instance.context.resetValidation();
     // Invoke clean so that newClubData reflects what will be inserted.
@@ -74,11 +78,13 @@ Template.Club_Edit_Page.events({
       Clubs.update({ '_id': id },
         {
           $set: {
+            'name': newClubData.name,
+            'leaders' : newClubData.leaders,
             'bio': newClubData.bio,
             'email': newClubData.email,
             'facebook': newClubData.facebook,
-            'instagram': newClubData.instagram,
             'twitter': newClubData.twitter,
+            'instagram': newClubData.instagram,
           },
           $push: { 'pictures': { $each: newClubData.pictures } },
         });
@@ -97,7 +103,9 @@ Template.Club_Edit_Page.events({
     });
   },
   'click .red.button': function (event) {
-    _.each(event.currentTarget.files, function (file) {
+    const files = document.getElementById('file').files;
+    console.log(files);
+    _.each(files, function (file) {
       Meteor.saveFile(file, file.name);
     });
     console.log('ran');

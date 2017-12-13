@@ -4,13 +4,30 @@
 
   <div class="ui container">
     <div class="ui sixteen wide grid">
-      <div class="sixteen wide centered row">
-        <h1 class="ui dividing header">{{ clubFeild 'name' }}</h1>
+      <div class="ui twelve wide centered column">
+        <div class="ui form">
+          <div class="field">
+            <label>Name</label>
+            <input class="iname" type="text" placeholder="Name" value="{{ clubFeild 'name' }}">
+          </div>
+          <div class="field">
+            <label>Leaders</label>
+            <input class="ileaders" type="text" placeholder="Leaders" value="{{ club.leaders }}">
+          </div>
+        </div>
       </div>
 
-      {{> Slideshow club=club}}
+      <div class="ui twelve wide centered column">
+        <div class="ui form">
+          <div class="field">
+            <label>Summary</label>
+            <textarea class="bio text" rows="7">{{ club.bio }}</textarea>
+          </div>
+        </div>
+      </div>
 
-        <div class="ui centered form">
+      <div class="ui twelve wide centered column">
+        <div class="ui form">
           <div class="inline fields">
             <div class="eight wide field">
               <i class="mail big icon" type="email"></i>
@@ -24,32 +41,32 @@
           <div class="inline fields">
             <div class="eight wide field">
               <i class="twitter big square icon" type="twitter"></i>
-              <input class="itwitter" type="text" placeholder="Twitter" value="{{ clubFeild 'twitter' }}">
+              <input class="itwitter" type="text" placeholder="Twitter" value="{{ club.twitter }}">
             </div>
             <div class="eight wide field">
               <i class="instagram square big icon" type="instagram"></i>
-              <input class="iinstagram" type="text" placeholder="Instagram" value="{{ clubFeild 'instagram' }}">
-            </div>
-          </div>
-        </div>
-
-      <div class="ui twelve wide centered column">
-        <div class="ui twelve wide row">
-          <div class="ui four wide left aligned row">
-            <label for="file" class="ui icon button">
-              <i class="file icon"></i>
-              Open File</label>
-            <input class="myfile" id="file" type="file" multiple style="display:none">
-            <div class="ui disabled input">
-              <input style="width: 570px;" type="text" placeholder="C:/...">
+              <input class="iinstagram" type="text" placeholder="Instagram" value="{{ club.instagram }}">
             </div>
           </div>
         </div>
       </div>
 
+      <div class="ui twelve wide centered column">
+        <div class="ui form">
+          <div class="inline field">
+            <label>Picture</label>
+            <input class="twelve wide ipicture" type="text" placeholder="https://www.squdify.com">
+          </div>
+        </div>
+      </div>
+
       <div class="ui centered row">
-        <a href=""><button class="ui huge green button" type="submit">Submit</button></a>
-        <a href=""><button class="ui huge red hidden button" type="delete">Delete</button></a>
+        <a href="">
+          <button class="ui huge green button" type="submit">Submit</button>
+        </a>
+        <a href="">
+          <button class="ui huge red hidden button" type="delete">Delete</button>
+        </a>
       </div>
     </div>
   </div>

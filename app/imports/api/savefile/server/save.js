@@ -7,7 +7,7 @@ import { fs } from 'fs';
  */
 
 Meteor.methods({
-  saveFile: function(blobb, namee, pathh, encodingg) {
+  saveFile: function(blob, namee, pathh, encodingg) {
     let path = cleanPath(pathh),
         name = cleanName(namee || 'file'), encoding = encodingg || 'binary',
         chroot = '../../../../../public/images';
@@ -15,10 +15,12 @@ Meteor.methods({
     // any sort of attempt to go to the parent directory '..' and any empty directories in
     // between '/////' - which may happen after removing '..'
     path = chroot + (path ? '/' + path + '/' : '/');
+    console.log(name);
     console.log(path);
+    console.log(encoding);
 
     // TODO Add file existance checks, etc...
-    fs.writeFile(path + name, blobb, encoding, function (err) {
+    fs.writeFile(path + name, blob, encoding, function (err) {
       if (err) {
         throw (new Meteor.Error(500, 'Failed to save file.', err));
       } else {

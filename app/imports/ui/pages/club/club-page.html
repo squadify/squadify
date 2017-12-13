@@ -7,7 +7,6 @@
         <h1 class="ui dividing header">{{ club.name }}</h1>
         <a href="{{ pathFor 'Club_Edit_Page' _id=club._id }}">[Edit]</a>
       </div>
-    </div>
 
     {{> Slideshow club=club}}
 
@@ -19,7 +18,7 @@
       </div>
     </div>
 
-    <div class="ui grid">
+    <div class="ui row">
       {{ #if club.email }}
       <div class="eight wide column">
         <i class="mail big icon"></i>
@@ -56,6 +55,7 @@
         </a>
       </div>
       -->
+  </div>
   </div>
 
     <div class="ui modal">

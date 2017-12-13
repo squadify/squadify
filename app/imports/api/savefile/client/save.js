@@ -10,7 +10,7 @@ import { Meteor } from 'meteor/meteor';
  */
 Meteor.saveFile = function(blob, name, path, type, callback) {
   var fileReader = new FileReader(),
-      method, encoding = 'binary', type = type || 'binary';
+      method, encoding = 'binary', type = 'binary';
   switch (type) {
     case 'text':
       // TODO Is this needed? If we're uploading content from file, yes, but if it's from an input/textarea I think not...
