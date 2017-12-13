@@ -19,14 +19,15 @@
       </div>
     </div>
     <button class="ui primary search button">
-      SEARCH
+      SEARCH{{result}}
     </button>
   </div>
-  <div class="ui container">
+  <div class="ui container clubs">
     <div class="eight wide column">
+      <h2 class="result">Results</h2>
       {{#each club in clubs}}
-      <li>
-        <a href="{{ pathFor 'Club_Page' _id=club._id }}" class="active item">{{club.name}}</a>
+      <li class="list">
+        <a href="{{ pathFor 'Club_Page' _id=club._id }}" class="active item club hover">{{club.name}}</a>
       </li>
       {{/each}}
     </div>

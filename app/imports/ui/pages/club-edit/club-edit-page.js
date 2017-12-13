@@ -15,7 +15,7 @@ Template.Club_Edit_Page.helpers({
   club() {
     // clubs(name) name wil be aloha-nave
     // replace - with space before find'
-    const club = _.find(Clubs.findAll(), function(clubb) {
+    const club = _.find(Clubs.findAll(), function (clubb) {
       return clubb._id === id;
     });
     return club;

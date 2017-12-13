@@ -48,8 +48,7 @@ Template.page_header.events({
     if (event.which == 13) {
       let input = $('.prompt').val();
       if (input) {
-        FlowRouter.go("/search/:parameters", { parameters: input });
-        //location.href =
+        location.href = FlowRouter.path("/search/:parameters", { parameters: input });
       }
     }
   }

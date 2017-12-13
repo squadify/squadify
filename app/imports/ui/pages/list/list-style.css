@@ -1,0 +1,35 @@
+#selectedTag{
+  font-size: 24pt;
+  padding-top: 20px;
+}
+
+.content.menu{
+  margin-top: 20px;
+  padding-bottom: 10px;
+}
+
+.vertical.menu{
+  margin-top: 20px;
+  margin-bottom: 25px;
+}
+
+.active.item{
+  font-family: 'Lato', sans-serif;
+  font-size: 16pt;
+  padding-bottom: 10px;
+  color: black;
+}
+
+.club.hover:hover{
+  color: blue;
+  text-decoration: underline;
+  font-weight: bold;
+}
+
+.club.tag{
+  font-size: 10pt;
+}
+
+.club.tag:hover{
+  font-weight: bold;
+}
