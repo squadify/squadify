@@ -29,10 +29,7 @@ const newid = 'ETCezPNgo9icxqtGe';
 
 Template.Club_Edit_Page.onCreated(function onCreated() {
   this.subscribe(Clubs.getPublicationName());
-<<<<<<< HEAD
   this.subscribe(Tags.getPublicationName());
-=======
->>>>>>> refs/remotes/origin/master
   id = FlowRouter.getParam('_id');
   this.context = ClubSchema.namedContext('Club_Edit_Page');
 });
