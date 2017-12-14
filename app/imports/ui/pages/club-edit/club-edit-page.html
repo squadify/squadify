@@ -68,10 +68,10 @@
           </thead>
           <tbody class="mytable">
           {{ #each picture in pictures }}
-          <tr>
+          <tr value="{{ picture }}">
             <td>{{ picture }}</td>
-            <td class="myrow">
-              <button class="ui tiny button active" name="mypic" id="mypic" value="{{ picture }}"><i class="remove icon"></i></button>
+            <td class="myrow" value="{{ picture }}">
+              <img class="ui  image" name="mypic" id="mypic" value="{{ picture }}" src="/images/delete_button.png">
             </td>
           </tr>
           {{ /each }}

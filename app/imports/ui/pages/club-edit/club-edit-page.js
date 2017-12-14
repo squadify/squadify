@@ -30,8 +30,7 @@ const newid = 'ETCezPNgo9icxqtGe';
 Template.Club_Edit_Page.onCreated(function onCreated() {
   this.subscribe(Clubs.getPublicationName());
   this.subscribe(Tags.getPublicationName());
-  //id = FlowRouter.getParam('_id');
-  id = 'JmC4gdx4s799iCCPZ';
+  id = FlowRouter.getParam('_id');
   this.context = ClubSchema.namedContext('Club_Edit_Page');
 });
 
@@ -106,7 +105,7 @@ Template.Club_Edit_Page.events({
       console.log('false');
     }
   },
-  'click .tiny.button': function (event) {
+  'click .tiny.image': function (event) {
     event.preventDefault();
     console.log(event.target.value);
     //console.log(event.Target.mypic.dataset.value);
@@ -121,7 +120,7 @@ Template.Club_Edit_Page.events({
     const insert = '<tr>\n' +
         '            <td>' + url + '</td>\n' +
         '            <td class="myrow">\n' +
-        '              <button class="ui tiny button active" name="Picture" value="' + url + '"><i class="remove icon"></i></button>\n' +
+        '              <button class="ui tiny picture" name="Picture" value="' + url + '"src="/images/delete_button.png">\n' +
         '            </td>\n' +
         '          </tr>';
 
