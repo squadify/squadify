@@ -29,9 +29,16 @@ const newid = 'ETCezPNgo9icxqtGe';
 
 Template.Club_Edit_Page.onCreated(function onCreated() {
   this.subscribe(Clubs.getPublicationName());
+<<<<<<< HEAD
   this.subscribe(Tags.getPublicationName());
+=======
+>>>>>>> refs/remotes/origin/master
   id = FlowRouter.getParam('_id');
   this.context = ClubSchema.namedContext('Club_Edit_Page');
+});
+
+Template.Club_Edit_Page.onRendered(function () {
+  // Use the Packery jQuery plugin
 });
 
 Template.Club_Edit_Page.helpers({
@@ -86,18 +93,18 @@ Template.Club_Edit_Page.events({
     if (instance.context.isValid()) {
       console.log('true');
       Clubs.update({ '_id': id },
-        {
-          $set: {
-            'name': newClubData.name,
-            'leaders' : newClubData.leaders,
-            'bio': newClubData.bio,
-            'email': newClubData.email,
-            'facebook': newClubData.facebook,
-            'twitter': newClubData.twitter,
-            'instagram': newClubData.instagram,
-          },
-          $push: { 'pictures': { $each: newClubData.pictures } },
-        });
+          {
+            $set: {
+              'name': newClubData.name,
+              'leaders': newClubData.leaders,
+              'bio': newClubData.bio,
+              'email': newClubData.email,
+              'facebook': newClubData.facebook,
+              'twitter': newClubData.twitter,
+              'instagram': newClubData.instagram,
+            },
+            $push: { 'pictures': { $each: newClubData.pictures } },
+          });
 
       //Contacts.insert(newClubData);
       //FlowRouter.go('Home_Page');
@@ -177,4 +184,7 @@ Template.Club_Edit_Page.events({
     });
     console.log('ran');
   },*/
+  'click .ui.fluid.dropdown': function (event) {
+    $('.dropdown').dropdown();
+  },
 });
