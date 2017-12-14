@@ -24,9 +24,12 @@ let id;
 
 Template.Club_Edit_Page.onCreated(function onCreated() {
   this.subscribe(Clubs.getPublicationName());
-  //id = FlowRouter.getParam('_id');
-  id = 's3fbF9q6kwkWji2xE';
+  id = FlowRouter.getParam('_id');
   this.context = ClubSchema.namedContext('Club_Edit_Page');
+});
+
+Template.Club_Edit_Page.onRendered(function () {
+  // Use the Packery jQuery plugin
 });
 
 Template.Club_Edit_Page.helpers({
@@ -76,18 +79,18 @@ Template.Club_Edit_Page.events({
     if (instance.context.isValid()) {
       console.log('true');
       Clubs.update({ '_id': id },
-        {
-          $set: {
-            'name': newClubData.name,
-            'leaders' : newClubData.leaders,
-            'bio': newClubData.bio,
-            'email': newClubData.email,
-            'facebook': newClubData.facebook,
-            'twitter': newClubData.twitter,
-            'instagram': newClubData.instagram,
-          },
-          $push: { 'pictures': { $each: newClubData.pictures } },
-        });
+          {
+            $set: {
+              'name': newClubData.name,
+              'leaders': newClubData.leaders,
+              'bio': newClubData.bio,
+              'email': newClubData.email,
+              'facebook': newClubData.facebook,
+              'twitter': newClubData.twitter,
+              'instagram': newClubData.instagram,
+            },
+            $push: { 'pictures': { $each: newClubData.pictures } },
+          });
 
       //Contacts.insert(newClubData);
       //FlowRouter.go('Home_Page');
@@ -109,5 +112,8 @@ Template.Club_Edit_Page.events({
       Meteor.saveFile(file, file.name);
     });
     console.log('ran');
+  },
+  'click .ui.fluid.dropdown': function (event) {
+    $('.dropdown').dropdown();
   },
 });
