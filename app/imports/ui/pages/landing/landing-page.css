@@ -3,7 +3,10 @@
   color: #E5F9E7;
 }
 
-#main_pic {
+#clubtitle:hover {
+  color: blue;
+  text-decoration: underline;
+  font-weight: bold;
 }
 
 .spotlight {
@@ -39,5 +42,9 @@
 .image{
   display: inline-block;
   border-radius: 10px;
+}
 
+.club.button{
+  background-color: darkgreen;
+  margin-bottom: 50px;
 }

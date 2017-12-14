@@ -84,11 +84,10 @@ FlowRouter.notFound = {
 
 /*                        CLUB ROUTE                       */
 
-export const clubPageRoutName = 'Club_Page';
-FlowRouter.route('/club', {
-  name: clubPageRoutName,
+FlowRouter.route('/club-page/:_id', {
+  name: 'Club_Page',
   action() {
-    BlazeLayout.render('Club_Layout', { main: clubPageRoutName });
+    BlazeLayout.render('Club_Layout', { main: 'Club_Page' });
   },
 });
 
@@ -98,13 +97,6 @@ FlowRouter.route('/list-page/:_id', {
   name: 'List_Page',
   action() {
     BlazeLayout.render('List_Page', { main: 'List_Page' });
-  },
-});
-
-FlowRouter.route('/club-page/:_id', {
-  name: 'Club_Page',
-  action() {
-    BlazeLayout.render('Club_Page', { main: 'Club_Page' });
   },
 });
 

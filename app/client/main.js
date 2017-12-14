@@ -21,12 +21,12 @@ import '/imports/ui/pages/profile';
 import '/imports/ui/pages/club';
 import '/imports/ui/pages/club-edit';
 import '/imports/ui/stylesheets/style.css';
-import '/imports/ui/pages/list';
 import '/imports/ui/pages/search';
 import '/imports/api/base';
 import '/imports/api/profile';
 import '/imports/api/interest';
 import '/imports/api/clubprofile';
 import '/imports/api/tags';
+import '/imports/api/savefile/client';
 import '/imports/api/admin';
 

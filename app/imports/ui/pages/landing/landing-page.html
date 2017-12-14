@@ -5,13 +5,14 @@
     {{#each club in clubs}}
     <div class="ui container">
       <h1>Spotlight Organization</h1>
-      <a style="font-size: 20px; font-weight: bold;" href="{{ pathFor 'Club_Page' _id=club._id }}">{{ club.name }}</a>
+      <a id="clubtitle" style="font-size: 20px; font-weight: bold;" href="{{ pathFor 'Club_Page' _id=club._id }}">{{ club.name }}</a>
       <img style="padding-top: 25px;" class="ui rounded large image"
            src="{{ club.pictures.[0] }}">
       <h3>Summary:</h3>
-      <p style="padding-bottom: 50px;">
+      <p style="padding-bottom: 10px;">
         {{ club.bio }}
       </p>
+      <button class="ui green club button">GO TO CLUB</button>
     </div>
     {{/each}}
     {{/if}}

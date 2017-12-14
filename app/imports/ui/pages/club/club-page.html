@@ -1,13 +1,12 @@
 <template name="Club_Page">
-  {{> page_header}}
   {{#if Template.subscriptionsReady}}
 
   <div class="ui container">
-  <div class="ui sixteen wide grid">
-    <div class="sixteen wide centered row">
-      <h1 class="ui dividing header">{{ club.name }}</h1>
-      <a href="/club_edit">[Edit]</a>
-    </div>
+    <div class="ui sixteen wide grid">
+      <div class="sixteen wide centered row">
+        <h1 class="ui dividing header">{{ club.name }}</h1>
+        <a href="{{ pathFor 'Club_Edit_Page' _id=club._id }}">[Edit]</a>
+      </div>
 
     {{> Slideshow club=club}}
 
@@ -44,7 +43,6 @@
         <a href=#>{{ club.instagram }}</a>
       </div>
       {{ /if }}
-
     </div>
       <!--
       <div class="ui centered row">
@@ -57,7 +55,6 @@
         </a>
       </div>
       -->
-
   </div>
   </div>
 
@@ -87,5 +84,4 @@
     </div>
 
   {{/if}}
-  {{> page_footer}}
 </template>
