@@ -3,10 +3,8 @@ import { $ } from 'meteor/jquery';
 import { _ } from 'meteor/underscore';
 import { FlowRouter } from 'meteor/kadira:flow-router';
 import { Clubs } from '/imports/api/clubprofile/ClubProfileCollection';
-import { Meteor } from 'meteor/meteor';
 import SimpleSchema from 'simpl-schema';
 import { Tags } from '/imports/api/tags/InterestsCollection';
-import { ReactiveDict } from 'meteor/reactive-dict';
 
 const ClubSchema = new SimpleSchema({
   // Remainder are optional
@@ -24,21 +22,17 @@ const ClubSchema = new SimpleSchema({
 });
 
 let id;
-let picturess = ['www.squdify.com', 'www.google.come', 'www.github.com'];
-const newid = 'ETCezPNgo9icxqtGe';
+let picturess = [];
 
-Template.Club_Edit_Page.onCreated(function onCreated() {
+Template.Club_Add_Page.onCreated(function onCreated() {
   this.subscribe(Clubs.getPublicationName());
   this.subscribe(Tags.getPublicationName());
   id = FlowRouter.getParam('_id');
-  this.context = ClubSchema.namedContext('Club_Edit_Page');
+  this.context = ClubSchema.namedContext('Club_Add_Page');
 });
 
-Template.Club_Edit_Page.onRendered(function () {
-  // Use the Packery jQuery plugin
-});
 
-Template.Club_Edit_Page.helpers({
+Template.Club_Add_Page.helpers({
   club() {
     const club = _.find(Clubs.findAll(), function (clubb) {
       return clubb._id === id;
@@ -62,12 +56,33 @@ Template.Club_Edit_Page.helpers({
   },
 });
 
-Template.Club_Edit_Page.events({
+Template.Club_Add_Page.events({
+  'click .tiny.button': function (event) {
+    event.preventDefault();
+    console.log(event.target.value);
+    //console.log(event.Target.mypic.dataset.value);
+    //var fired_button = $(this).val();
+    //console.log(fired_button)
+    //$("#div1").remove();
+  },
+  'click .myadd': function () {
+    const url = $('.iurl').val();
+    if(url) {
+      picturess.push(url);
+      //console.log(pictures);
+      const insert = '<tr>\n' +
+          '            <td>' + url + '</td>\n' +
+          '          </tr>';
+
+      $('.mytable').append(insert);
+    }
+  },
   'click .green.button'(event, instance) {
     event.preventDefault();
     const name = $('.iname').val();
     const leaders = $('.ileaders').val().split(',');
     const bio = $('.itext').val();
+    const tags = ['fake1', 'fake2', 'fake3'];
     const pictures = picturess;
     const email = $('.iemail').val();
     const facebook = $('.ifacebook').val();
@@ -81,58 +96,20 @@ Template.Club_Edit_Page.events({
     console.log(instagram);
     console.log(instance);
     console.log(instance.context);
-    const newClubData = { name, leaders, bio, pictures, email, facebook, twitter, instagram };
+    const newClubData = { name, leaders, bio, tags, pictures, email, facebook, instagram };
     // Clear out any old validation errors.
     //instance.context.resetValidation();
     // Invoke clean so that newClubData reflects what will be inserted.
     ClubSchema.clean(newClubData);
     // Determine validity.
     instance.context.validate(newClubData);
-    //if (instance.context.isValid()) {
+    if (instance.context.isValid()) {
       console.log('true');
-      Clubs.update({ '_id': id },
-          {
-            $set: {
-              'name': newClubData.name,
-              'leaders': newClubData.leaders,
-              'bio': newClubData.bio,
-              'email': newClubData.email,
-              'facebook': newClubData.facebook,
-              'twitter': newClubData.twitter,
-              'instagram': newClubData.instagram,
-            },
-            $push: { 'pictures': { $each: newClubData.pictures } },
-          });
-
-      //Contacts.insert(newClubData);
-      location.href = FlowRouter.path("/club-page/:_id", { _id: id });
-    //} else {
-     // console.log('false');
-    //}
-  },
-  'click .tiny.button': function (event) {
-    event.preventDefault();
-    console.log(event.target.value);
-    //console.log(event.Target.mypic.dataset.value);
-    //var fired_button = $(this).val();
-    //console.log(fired_button)
-    //$("#div1").remove();
-  },
-  'click .myadd': function () {
-    const url = $('.iurl').val();
-    if(url) {
-      picturess.push(url);
-      //console.log(picturess);
-      const insert = '<tr>\n' +
-          '            <td>' + url + '</td>\n' +
-          '          </tr>';
-
-      $('.mytable').append(insert);
+      Clubs.define(newClubData);
+      //FlowRouter.go('Home_Page');
+    } else {
+      console.log('false');
     }
-  },
-  'click .red.button': function () {
-    Clubs.removeIt(newid);
-    location.href = FlowRouter.path("/club-page/:_id", { _id: id });
   },
   'click .ui.fluid.dropdown': function (event) {
     $('.dropdown').dropdown();
