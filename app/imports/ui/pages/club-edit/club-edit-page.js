@@ -108,10 +108,10 @@ Template.Club_Edit_Page.events({
   },
   'click .tiny.button': function (event) {
     event.preventDefault();
-    console.log(event);
-    console.log(event.Target.mypic.dataset.value);
-    var fired_button = $(this).val();
-    console.log(fired_button)
+    console.log(event.target.value);
+    //console.log(event.Target.mypic.dataset.value);
+    //var fired_button = $(this).val();
+    //console.log(fired_button)
     //$("#div1").remove();
   },
   'click .myadd': function () {
@@ -158,25 +158,6 @@ Template.Club_Edit_Page.events({
     instance.context.validate(newClubData);
     if (instance.context.isValid()) {
       console.log('true');
-      /*
-      Clubs.insert({
-        'name': newClubData.name,
-        'leaders': { $each: newClubData.leaders },
-        'bio': newClubData.bio,
-        'tags': [
-          'Sports',
-          'Leisure',
-          'Social',
-        ],
-        'pictures': { $each: newClubData.pictures },
-        'email': newClubData.email,
-        'facebook': newClubData.facebook,
-        'twitter': newClubData.twitter,
-        'instagram': newClubData.instagram,
-        'website': '',
-        'apply': false,
-      });*/
-
       Clubs.define(newClubData);
       //FlowRouter.go('Home_Page');
     } else {
