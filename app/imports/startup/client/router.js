@@ -107,6 +107,13 @@ FlowRouter.route('/club-edit/:_id', {
   },
 });
 
+FlowRouter.route('/add-club/', {
+  name: 'Club_Add_Page',
+  action() {
+    BlazeLayout.render('Club_Add_Page', { main: 'Club_Add_Page' });
+  },
+});
+
 FlowRouter.route('/search/', {
   name: 'Search_Page',
   action() {
