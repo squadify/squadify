@@ -105,7 +105,7 @@ Template.Club_Edit_Page.events({
       console.log('false');
     }
   },
-  'click .tiny.image': function (event) {
+  'click .tiny.button': function (event) {
     event.preventDefault();
     console.log(event.target.value);
     //console.log(event.Target.mypic.dataset.value);
@@ -120,7 +120,7 @@ Template.Club_Edit_Page.events({
     const insert = '<tr>\n' +
         '            <td>' + url + '</td>\n' +
         '            <td class="myrow">\n' +
-        '              <button class="ui tiny picture" name="Picture" value="' + url + '"src="/images/delete_button.png">\n' +
+        '              <button class="ui tiny square button mypic" name="Picture" value="' + url + '">\n' +
         '            </td>\n' +
         '          </tr>';
 

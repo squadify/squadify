@@ -2,3 +2,9 @@
   padding-top: 50px;
   padding-bottom: 50px;
 }
+
+.button.mypic{
+  background-image: url("/images/delete_button.png");
+  width: 20px;
+  height: 20px;
+}
