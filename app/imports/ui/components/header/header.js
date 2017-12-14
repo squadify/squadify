@@ -35,6 +35,17 @@ Template.page_header.helpers({
     return false;//list.length;
   },
 
+  admin() {
+    if (Meteor.users.find().fetch().length > 0) {
+      let admin = ["herm8888", "bryantsa", "yong4", "johnson"];
+      let user = Meteor.users.find().fetch()[0].profile.name;
+      if(_.contains(admin, user)) {
+        return true;
+      }
+    }
+    return false;
+  }
+
 });
 
 Template.page_header.events({
