@@ -21,10 +21,17 @@
         <div class="ui form">
           <div class="field">
             <label>Summary</label>
-            <textarea class="bio text" rows="7">{{ club.bio }}</textarea>
+            <textarea class="itext" rows="7">{{ club.bio }}</textarea>
           </div>
         </div>
       </div>
+
+      <!--<form class="ui equal width form filter-data-form">
+        <div class="field">
+          {{> Select_Form_Control label="Tags" options=interests multiple=true }}
+        </div>
+        <button class="ui teal button" type="submit">Filter</button>
+      </form>-->
 
       <div class="ui twelve wide centered column">
         <div class="ui form">
@@ -52,10 +59,34 @@
       </div>
 
       <div class="ui twelve wide centered column">
+        <table class="ui compact table">
+          <thead>
+          <tr>
+            <th class="ten wide">Image url</th>
+            <th class="two wide">Remove</th>
+          </tr>
+          </thead>
+          <tbody class="mytable">
+          {{ #each picture in pictures }}
+          <tr>
+            <td>{{ picture }}</td>
+            <td class="myrow">
+              <button class="ui tiny button active" name="mypic" id="mypic" value="{{ picture }}"><i class="remove icon"></i></button>
+            </td>
+          </tr>
+          {{ /each }}
+          </tbody>
+        </table>
+      </div>
+
+      <div class="ui twelve wide centered column">
         <div class="ui form">
           <div class="inline field">
-            <label>Picture</label>
-            <input class="twelve wide ipicture" type="text" placeholder="https://www.squdify.com">
+            <label>Image url</label>
+            <input class="twelve wide iurl" style="width: 500px;" type="text" placeholder="https://www.squdify.com">
+            <button class="ui myadd button">
+              Add
+            </button>
           </div>
         </div>
       </div>
